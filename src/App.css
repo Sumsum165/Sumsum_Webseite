@@ -251,3 +251,25 @@ a {
 .content-page {
   padding-top: 90px;
 }
+.app-video-grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+}
+.app-video-grid video {
+  border-radius: 28px;
+  border: 2px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  background: black;
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+}
+.app-video-grid video {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.app-video-grid video:hover {
+  transform: scale(1.03);
+  box-shadow: 0 30px 80px rgba(0, 255, 180, 0.2);
+}
