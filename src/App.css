@@ -43,10 +43,22 @@ video {
   font-size: 72px;
   margin: 0;
   letter-spacing: 2px;
+
+  /* sanfter Glow */
+  text-shadow:
+    0 0 10px rgba(0, 255, 180, 0.15),
+    0 0 30px rgba(0, 255, 180, 0.08);
+
+  transition: all 0.4s ease;
+}
+.title:hover {
+  text-shadow:
+    0 0 14px rgba(0, 255, 179, 0.211),
+    0 0 50px rgba(0, 255, 180, 0.15);
 }
 
 .subtitle {
-  margin-top: 10px;
+  margin-top: 24px; /* vorher war es kleiner */
   color: #b7b7b7;
   font-size: 20px;
 }
@@ -222,7 +234,14 @@ a {
   width: 42px;
   height: 42px;
   object-fit: contain;
-  filter: drop-shadow(0 0 12px rgba(255, 220, 90, 0.18));
+
+  filter: drop-shadow(0 0 6px rgba(255, 220, 90, 0.25));
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.logo:hover img {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 12px rgba(255, 220, 90, 0.4));
 }
 
 .header nav {
@@ -272,4 +291,25 @@ a {
 .app-video-grid video:hover {
   transform: scale(1.03);
   box-shadow: 0 30px 80px rgba(0, 255, 180, 0.2);
+}
+.intro-text {
+  margin-top: 30px;
+  max-width: 600px;
+  color: #b7b7b7;
+  line-height: 1.7;
+  font-size: 16px;
+}
+.fade-in {
+  animation: fadeInUp 0.45s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

@@ -90,7 +90,7 @@ export default function App() {
         <Header setPage={setPage} />
         <div className="overlay" />
 
-        <section className="content-page">
+        <section className="content-page fade-in">
           <h1 className="page-title">🎵 Musik</h1>
           <p className="page-text">
             Hier findest du meine Songs – direkt als Video.
@@ -138,7 +138,7 @@ export default function App() {
       <Header setPage={setPage} />
       <div className="overlay" />
 
-      <section className="content-page">
+      <section className="content-page fade-in">
         <h1 className="page-title">📱 Sumsum App</h1>
 
         <p className="page-text">
@@ -205,9 +205,19 @@ export default function App() {
       <Header setPage={setPage} />
       <div className="overlay" />
 
-      <section className="hero">
+      <section className="hero fade-in">
         <h1 className="title">Sumsum</h1>
         <p className="subtitle">Musik. Ideen. Herzensprojekte.</p>
+
+<p className="intro-text">
+  Manche Dinge entstehen leise.  
+  Zwischen Gedanken, Momenten und kleinen Ideen.  
+
+  Musik, die etwas ausdrückt, ohne laut zu sein.  
+  Projekte, die wachsen dürfen, ohne perfekt zu starten.  
+
+  Und plötzlich entsteht etwas Größeres.
+</p>
 
         <div className="buttons">
           <button className="btn primary" onClick={() => setPage("music")}>
