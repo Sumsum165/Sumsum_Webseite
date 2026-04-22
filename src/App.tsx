@@ -2,8 +2,30 @@ import { useState } from "react";
 import "./App.css";
 import bee from "./assets/bee.png";
 import CursorGlow from "./CursorGlow";
+
 type Page = "home" | "music" | "app" | "fotografie";
 
+const InstagramIcon = () => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    width="18"
+    height="18"
+  >
+    <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.5-.75a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5z"/>
+  </svg>
+);
+
+const TikTokIcon = () => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    width="18"
+    height="18"
+  >
+    <path d="M19.589 6.686a4.793 4.793 0 01-3.77-1.87v8.17a6.003 6.003 0 11-5.19-5.94v2.53a3.47 3.47 0 102.36 3.31V2h2.62a4.79 4.79 0 004.04 2.21v2.476z"/>
+  </svg>
+);
 const songs = [
   {
     title: "Leise hier",
@@ -157,6 +179,17 @@ function Header({
 >
   Fotografie
 </button>
+
+<div className="social-icons">
+  <a href="https://www.instagram.com/sumsum165?igsh=ODZzNm8xZ3gyd3o0" target="_blank" rel="noreferrer">
+    <InstagramIcon />
+  </a>
+
+  <a href="https://www.tiktok.com/@sumsum8856?_r=1&_t=ZG-95jvqS2GDcO" target="_blank" rel="noreferrer">
+    <TikTokIcon />
+  </a>
+</div>
+
 </nav>
     </header>
   );
@@ -172,7 +205,7 @@ function pauseOtherVideos(currentVideo: HTMLVideoElement) {
 }
 export default function App() {
   const [page, setPage] = useState<Page>("home");
-  const [selectedPhoto, setSelectedPhoto] = useState<string | null>(null);
+  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
   if (page === "music") {
     return (
@@ -229,7 +262,10 @@ export default function App() {
       <Header setPage={setPage} page={page} />
       <div className="overlay" />
 
-      <section className="content-page fade-in">
+      <section
+  className="content-page fade-in"
+  onContextMenu={(e) => e.preventDefault()}
+>
         <h1 className="page-title">📷 Fotografie</h1>
 
         <p className="page-text">
@@ -239,18 +275,51 @@ export default function App() {
         </p>
 
         <div className="photo-grid">
-          {selectedPhoto && (
-  <div className="lightbox" onClick={() => setSelectedPhoto(null)}>
-    <img src={selectedPhoto} className="lightbox-image" />
+          {selectedIndex !== null && (
+  <div
+    className="lightbox"
+    onClick={() => setSelectedIndex(null)}
+  >
+    <img
+      src={photos[selectedIndex].src}
+      className="lightbox-image"
+      onClick={(e) => e.stopPropagation()}
+    />
+
+    <button
+      className="nav left"
+      onClick={(e) => {
+        e.stopPropagation();
+        setSelectedIndex((prev) =>
+          prev === 0 ? photos.length - 1 : prev! - 1
+        );
+      }}
+    >
+      ‹
+    </button>
+
+    <button
+      className="nav right"
+      onClick={(e) => {
+        e.stopPropagation();
+        setSelectedIndex((prev) =>
+          prev === photos.length - 1 ? 0 : prev! + 1
+        );
+      }}
+    >
+      ›
+    </button>
   </div>
 )}
-          {photos.map((photo) => (
+          {photos.map((photo, index) => (
             <article key={photo.src} className="photo-card">
               <img
   src={photo.src}
   alt={photo.title}
-  className="photo-image"
-  onClick={() => setSelectedPhoto(photo.src)}
+  className="photo-image protected-image"
+  onClick={() => setSelectedIndex(index)}
+  onContextMenu={(e) => e.preventDefault()}
+  draggable={false}
 />
             </article>
           ))}

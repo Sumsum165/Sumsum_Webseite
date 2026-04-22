@@ -201,7 +201,7 @@ a {
   position: fixed;
   top: 18px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-52%);
   width: calc(100% - 32px);
   max-width: 1200px;
   height: 72px;
@@ -398,4 +398,81 @@ a {
   max-height: 90%;
   border-radius: 16px;
   box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+
+  animation: zoomIn 0.35s ease;
+}
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@media (max-width: 600px) {
+  .header {
+    padding: 0 12px; /* weniger Rand links/rechts */
+    height: 64px;
+  }
+
+  .header nav {
+    gap: 4px;
+  }
+
+  .header nav button {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  .logo span {
+    font-size: 16px;
+  }
+
+  .logo img {
+    width: 34px;
+    height: 34px;
+  }
+}
+.protected-image {
+  -webkit-user-drag: none;
+  user-select: none;
+}
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  color: white;
+  background: rgba(0, 0, 0, 0.3);
+  border: none;
+  cursor: pointer;
+  padding: 10px 16px;
+  border-radius: 12px;
+  z-index: 101;
+}
+
+.nav.left {
+  left: 20px;
+}
+
+.nav.right {
+  right: 20px;
+}
+.social {
+  margin-left: 16px;
+  font-size: 14px;
+  color: #888;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.social:hover {
+  color: #00ffc3;
+}
+@media (max-width: 600px) {
+  .header {
+    transform: translateX(-51%);
+  }
 }
