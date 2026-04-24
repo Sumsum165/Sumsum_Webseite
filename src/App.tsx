@@ -77,6 +77,11 @@ const songs = [
     src: "/videos/wir-sehen-dich.mp4",
     description: "Ein Song über Wahrnehmung und Wert.",
   },
+  {
+    title: "Der erste Stein",
+    src: "/videos/der-erste-stein-rock.mp4",
+    description: "Ein Song über Veränderung./Rock-Version.",
+  }, 
 ];
 const photos = [
   {
