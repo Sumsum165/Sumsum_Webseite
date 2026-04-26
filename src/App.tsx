@@ -82,6 +82,21 @@ const songs = [
     src: "/videos/der-erste-stein.-rock.mp4",
     description: "Ein Song über Veränderung – in rockiger Version.",
   }, 
+  {
+  title: "Ich bleib bei mir",
+    src: "/videos/ich-bleib-bei-mir.mp4",
+    description: "Ein Song darüber, warum man nicht einsam ist, wenn man allein ist.",
+  },
+   {
+  title: "Ich bin noch hier",
+    src: "/videos/ich-bin-noch-hier.mp4",
+    description: "Ein sehr gefühlvoller Sprechgesang über das Dasein und die Präsenz.",
+  },
+   {
+  title: "Ich war kurz weg",
+    src: "/videos/ich-war-kurz-weg.mp4",
+    description: "Ein sehr gefühlvoller Sprechgesang.",
+  },
 ];
 const photos = [
   {
