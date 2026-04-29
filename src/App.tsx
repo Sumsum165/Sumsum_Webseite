@@ -97,6 +97,51 @@ const songs = [
     src: "/videos/ich-war-kurz-weg.mp4",
     description: "Ein sehr gefühlvoller Sprechgesang.",
   },
+  {
+  title: "Manchmal denk ich...",
+    src: "/videos/manchmal-denk-ich.mp4",
+    description: "minimalistischer Monolog-Song",
+  },
+  {
+  title: "Ich hab mich gewählt",
+    src: "/videos/ich-hab-mich-gewählt.mp4",
+    description: "Ich stehe jetzt für mich ein – aber ohne laut zu werden",
+  },
+  {
+  title: "Ich bin noch ich",
+    src: "/videos/ich-bin-noch-ich.mp4",
+    description: "Ist man ein anderer Mensch geworden, nur weil man älter wird?",
+  },
+   {
+  title: "Meine Schritte",
+    src: "/videos/meine-schritte.mp4",
+    description: "Mein Weg zu mir selbst",
+  },
+   {
+  title: "Meine Schritte- Version 2",
+    src: "/videos/meine-schritte-version-2.mp4",
+    description: "Mein Weg zu mir selbst",
+  },
+ {
+  title: "Wenn ich mir damals begegnen würde",
+    src: "/videos/wenn-ich-mir-damals-begegnen-würde.mp4",
+    description: "Ein Song wie ein Gespräch mit meinem früheren Ich",
+  }, 
+  {
+  title: "Sanfte Power",
+    src: "/videos/sanfte-power.mp4",
+    description: "Der Weg zu mir selbst",
+  },
+  {
+  title: "Sanfte Power- Version 2",
+    src: "/videos/sanfte-power-version-2.mp4",
+    description: "Der Weg zu mir selbst",
+  },
+{
+  title: "Unter der Oberfläche",
+    src: "/videos/unter-der-oberfläche.mp4",
+    description: "mein kompletter Stil in einem Song – leise, aber mit viel Power und Gefühl",
+  },  
 ];
 const photos = [
   {
