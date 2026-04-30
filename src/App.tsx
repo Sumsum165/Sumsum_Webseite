@@ -142,6 +142,11 @@ const songs = [
     src: "/videos/unter-der-oberfläche.mp4",
     description: "mein kompletter Stil in einem Song – leise, aber mit viel Power und Gefühl",
   },  
+  {
+  title: "Ein ganz normaler Morgen",
+    src: "/videos/ein-ganz-normaler-morgen.mp4",
+    description: "ich bin bei mir, ich brauche nichts anderes mehr, ich genieße die Stille und den Augenblick",
+  }, 
 ];
 const photos = [
   {
