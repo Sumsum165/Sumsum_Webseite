@@ -79,7 +79,7 @@ const songs = [
   },
   {
     title: "Der erste Stein",
-    src: "/videos/der-erste-stein.-rock.mp4",
+    src: "/videos/der-erste-stein-rock.mp4",
     description: "Ein Song über Veränderung – in rockiger Version.",
   }, 
   {
