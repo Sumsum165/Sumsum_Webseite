@@ -146,6 +146,11 @@ const songs = [
   title: "Ein ganz normaler Morgen",
     src: "/videos/ein-ganz-normaler-morgen.mp4",
     description: "ich bin bei mir, ich brauche nichts anderes mehr, ich genieße die Stille und den Augenblick",
+  },
+  {
+  title: "Ein ganz normaler Morgen",
+    src: "/videos/ein-ganz-normaler-morgen-version 2.mp4",
+    description: "Kopfhörer auf, Augen zu, genießen – ein Song über das Ankommen bei sich selbst und die Schönheit der Stille",
   }, 
 ];
 const photos = [
