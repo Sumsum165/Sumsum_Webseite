@@ -152,6 +152,21 @@ const songs = [
     src: "/videos/ein-ganz-normaler-morgen-version 2.mp4",
     description: "Kopfhörer auf, Augen zu, genießen – ein Song über das Ankommen bei sich selbst und die Schönheit der Stille",
   }, 
+  {
+  title: "Bevor der Sommer ging",
+    src: "/videos/bevor-der-summer-ging.mp4",
+    description: "Ein Lied wie eine leichte Brise, die an einem warmen Sommerabend vorbeizieht ",
+  },
+  {
+  title: "Der Morgen atmet leise",
+    src: "/videos/der-morgen-atmet-leise.mp4",
+    description: "Ein Song über das Ankommen bei sich selbst und die Schönheit der Stille",
+  },
+  {
+  title: "Zwischen den Straßenlichtern",
+    src: "/videos/zwischen-den-strassenlichtern.mp4",
+    description: "Ein Song über das Ankommen bei sich selbst und die Schönheit der Stille",
+  },
 ];
 const photos = [
   {
