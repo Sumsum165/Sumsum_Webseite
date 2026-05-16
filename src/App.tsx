@@ -154,7 +154,7 @@ const songs = [
   }, 
   {
   title: "Bevor der Sommer ging",
-    src: "/videos/bevor-der-summer-ging.mp4",
+    src: "/videos/bevor-der-sommer-ging.mp4",
     description: "Ein Lied wie eine leichte Brise, die an einem warmen Sommerabend vorbeizieht ",
   },
   {
@@ -164,7 +164,7 @@ const songs = [
   },
   {
   title: "Zwischen den Straßenlichtern",
-    src: "/videos/zwischen-den-strassenlichtern.mp4",
+    src: "/videos/zwischen-den-straßenlichtern.mp4",
     description: "Ein Song über das Ankommen bei sich selbst und die Schönheit der Stille",
   },
 ];
