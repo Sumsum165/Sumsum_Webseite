@@ -167,6 +167,16 @@ const songs = [
     src: "/videos/zwischen-den-straßenlichtern.mp4",
     description: "Ein Song über das Ankommen bei sich selbst und die Schönheit der Stille",
   },
+  {
+  title: "Was ist Glück",
+    src: "/videos/was-ist-glueck .mp4",
+    description: "Das Glück liegt in den kleinen Dingen, die wir oft übersehen – ein Song über das bewusste Wahrnehmen und Genießen des Moments",
+  },
+  {
+  title: "What is happiness",
+    src: "/videos/what-is-happiness.mp4",
+    description: "Englische Version im Sade-Stil",
+  },
 ];
 const photos = [
   {
