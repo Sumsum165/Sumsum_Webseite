@@ -177,6 +177,26 @@ const songs = [
     src: "/videos/what-is-happiness.mp4",
     description: "Englische Version im Sade-Stil",
   },
+  {
+  title: "I`m letting myself been seen",
+    src: "/videos/i`m-letting-myself-been-seen.mp4",
+    description: "Englische Version von Ich zeige mich ",
+  },
+  {
+  title: "Ich zeige Mich",
+    src: "/videos/ich-zeige-mich.mp4",
+    description: "Körper werden nicht Kommentiert!",
+  },
+  {
+  title: "Silence isn`t stand still",
+    src: "/videos/silence-isn`t-stand-still.mp4",
+    description: "Englische Version von Stille ist kein Stillstand",
+  },
+  {
+  title: "Stille ist kein Stillstand",
+    src: "/videos/stille-ist-kein-stillstand.mp4",
+    description: "Stille bedeutet nicht Schwäche,sie bedeutet innehalten.",
+  },
 ];
 const photos = [
   {
