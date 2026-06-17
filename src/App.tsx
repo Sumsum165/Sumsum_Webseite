@@ -279,6 +279,19 @@ const photos = [
    title: "Fotografie 20",
     src: "/fotografie/foto20.jpg",
   },
+   {
+   title: "Fotografie 21",
+    src: "/fotografie/foto21.jpg",
+  },
+   {
+   title: "Fotografie 22",
+    src: "/fotografie/foto22.jpg",
+  },
+   {
+   title: "Fotografie 23",
+    src: "/fotografie/foto23.jpg",
+  },
+  
 ];
 function Header({
   setPage,
