@@ -197,6 +197,11 @@ const songs = [
     src: "/videos/stille-ist-kein-stillstand.mp4",
     description: "Stille bedeutet nicht Schwäche,sie bedeutet innehalten.",
   },
+  {
+  title: " Sommer Beat",
+    src: "/videos/sommer-beat.mp4",
+    description: "Meine Sicht auf den Sommer, wie er wirklich ist, nicht geschönt oder romantisiert.",
+  },
 ];
 const photos = [
   {
@@ -279,6 +284,19 @@ const photos = [
    title: "Fotografie 20",
     src: "/fotografie/foto20.jpg",
   },
+   {
+   title: "Fotografie 21",
+    src: "/fotografie/foto21.jpg",
+  },
+   {
+   title: "Fotografie 22",
+    src: "/fotografie/foto22.jpg",
+  },
+   {
+   title: "Fotografie 23",
+    src: "/fotografie/foto23.jpg",
+  },
+  
 ];
 function Header({
   setPage,
