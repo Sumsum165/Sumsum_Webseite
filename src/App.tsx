@@ -202,6 +202,11 @@ const songs = [
     src: "/videos/sommer-beat.mp4",
     description: "Meine Sicht auf den Sommer, wie er wirklich ist, nicht geschönt oder romantisiert.",
   },
+ {
+  title: " Quietly here",
+    src: "/videos/quietly_here_own_voice.mp4",
+    description: "Englische Version von Leise hier- neu arrangiert mit meiner eigenen Stimme, die ich noch nie zuvor in einem Song verwendet habe.",
+    },
 ];
 const photos = [
   {
