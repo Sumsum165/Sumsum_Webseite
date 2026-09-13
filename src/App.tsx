@@ -57,16 +57,7 @@ const songs = [
     src: "/videos/ich-fall-und-ich-steh.mp4",
     description: "Über Rückschläge und Weitermachen.",
   },
-  {
-    title: "Ein kleiner Stein",
-    src: "/videos/ein-kleiner-stein.mp4",
-    description: "Über kleine Dinge mit großer Wirkung.",
-  },
-  {
-    title: "Der erste Stein",
-    src: "/videos/der-erste-stein.mp4",
-    description: "Ein Song über Veränderung.",
-  },
+  
   {
     title: "Immer noch an meiner Seite",
     src: "/videos/immer-noch-an-meiner-seite.mp4",
@@ -77,11 +68,7 @@ const songs = [
     src: "/videos/wir-sehen-dich.mp4",
     description: "Ein Song über Wahrnehmung und Wert.",
   },
-  {
-    title: "Der erste Stein",
-    src: "/videos/der-erste-stein-rock.mp4",
-    description: "Ein Song über Veränderung – in rockiger Version.",
-  }, 
+   
   {
   title: "Ich bleib bei mir",
     src: "/videos/ich-bleib-bei-mir.mp4",
@@ -207,6 +194,26 @@ const songs = [
     src: "/videos/quietly_here_own_voice.mp4",
     description: "Englische Version von Leise hier- neu arrangiert mit meiner eigenen Stimme, die ich noch nie zuvor in einem Song verwendet habe.",
     },
+      {
+  title: " Der Fluss",
+    src: "/videos/der-fluss.mp4",
+    description: " Wenn Gedanken einen nicht mehr loslassen, ist es wie ein Fluss, der einen mitreißt. Manchmal muss man sich treiben lassen, um wieder zu sich selbst zu finden.",
+  },
+    {
+  title: " Sommer Beat",
+    src: "/videos/sommer-beat.mp4",
+    description: "Meine Sicht auf den Sommer, wie er wirklich ist, nicht geschönt oder romantisiert.",
+  },
+  {
+  title: " Ein letzter Schritt",
+    src: "/videos/ein-letzter-schritt.mp4",
+    description: "Tango meets Dark Wave - oder.... wer verführt hier eigentlich wen?"
+  },
+  {
+  title: " Grey Bumblebee",
+    src: "/videos/grey-bumblebee.mp4",
+    description: " Diss Track - Bumblebee zeigt wie das geht, mit Ironie und Witz- ohne Herabwürdigung und Menschenverachtung."
+  },
 ];
 const photos = [
   {
