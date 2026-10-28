@@ -136,3 +136,7 @@
 .dialog-attribution { color: #b3c3bb; font-size: 12px; line-height: 1.7; margin: 16px 0 4px; }
 .dialog-download { display: inline-block; padding: 12px 0; font-size: 13px; }
 #musik-nutzung { scroll-margin-top: 100px; }
+
+/* Kooperationen und Textangaben */
+.track-credits { color: #c4d9d0; font-size: 13px; line-height: 1.65; margin: 4px 0 16px; padding: 12px 14px; border-left: 2px solid #9cd9c6; background: #ffffff05; border-radius: 0 8px 8px 0; overflow-wrap: anywhere; }
+.music-dialog .track-credits { margin-top: 16px; }

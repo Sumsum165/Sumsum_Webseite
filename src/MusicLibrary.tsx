@@ -3,8 +3,8 @@ import catalogue from "./songs.json";
 import "./MusicLibrary.css";
 
 type Version = { label: string; audio?: string; video?: string; cover?: string; duration?: number; videoLabel?: string; description?: string };
-type Song = { id: string; title: string; description: string; category: string; language: string; versions: Version[]; newAddition?: boolean };
-type VideoSelection = { title: string; version: Version };
+type Song = { id: string; title: string; description: string; category: string; language: string; versions: Version[]; newAddition?: boolean; credits?: string };
+type VideoSelection = { title: string; version: Version; credits?: string };
 const songs: Song[] = catalogue;
 const categories = [...new Set(songs.map(song => song.category))].sort((a, b) => a.localeCompare(b, "de"));
 const languageNames: Record<string, string> = { de: "Deutsch", en: "Englisch", it: "Italienisch", unknown: "Ohne Sprachzuordnung" };
@@ -40,6 +40,7 @@ function SongCard({ song, onVideo }: { song: Song; onVideo: (selection: VideoSel
         </div>
       </div>
       {description && <p className="track-description">{description}</p>}
+      {song.credits && <p className="track-credits">{song.credits}</p>}
       {song.newAddition && <p className="new-track-badge">Neu in der Sammlung{song.versions.length > 1 ? " · mit weiteren Fassungen" : ""}</p>}
       {song.versions.length === 1 && version.label !== "Original" && <p className="single-version-label">{version.label}</p>}
       {song.versions.length > 1 && (
@@ -60,7 +61,7 @@ function SongCard({ song, onVideo }: { song: Song; onVideo: (selection: VideoSel
         {audioError && <p className="media-error" role="alert">Der Song konnte nicht geladen werden. {version.video ? "Versuche es mit dem Video." : "Bitte lade die Seite erneut."}</p>}
         {version.video && <button type="button" className="video-link" aria-label={`${version.videoLabel || "Video ansehen"}: ${song.title} – ${version.label}`} onClick={() => {
           pauseOthers();
-          onVideo({ title: song.title, version });
+          onVideo({ title: song.title, version, credits: song.credits });
         }}><span aria-hidden="true">▷</span> {version.videoLabel || "Video ansehen"}</button>}
         <div className="track-downloads">
           {version.audio && <a href={version.audio} download={downloadName(song.title, version, "mp3")} aria-label={`MP3 herunterladen: ${song.title} – ${version.label}`}>↓ MP3 herunterladen</a>}
@@ -92,6 +93,7 @@ function VideoDialog({ selection, onClose }: { selection: VideoSelection; onClos
       </div>
       <video controls controlsList="nodownload" playsInline preload="metadata" src={selection.version.video} poster={selection.version.cover}
         onPlay={event => pauseOthers(event.currentTarget)} onError={() => setError(true)} />
+      {selection.credits && <p className="track-credits">{selection.credits}</p>}
       <p className="dialog-attribution">SaSum · sumsum165.de · Für deinen privaten Gebrauch</p>
       <a className="dialog-download" href={selection.version.video} download={downloadName(selection.title, selection.version, "mp4")}>↓ MP4 herunterladen</a>
       {error && <p className="media-error" role="alert">Das Video konnte nicht geladen werden. Bitte versuche es später erneut.</p>}
