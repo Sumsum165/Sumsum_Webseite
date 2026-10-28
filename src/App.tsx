@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import bee from "./assets/bee.png";
 import CursorGlow from "./CursorGlow";
+import MusicLibrary from "./MusicLibrary";
 
 type Page = "home" | "music" | "app" | "fotografie";
 
@@ -26,195 +27,6 @@ const TikTokIcon = () => (
     <path d="M19.589 6.686a4.793 4.793 0 01-3.77-1.87v8.17a6.003 6.003 0 11-5.19-5.94v2.53a3.47 3.47 0 102.36 3.31V2h2.62a4.79 4.79 0 004.04 2.21v2.476z"/>
   </svg>
 );
-const songs = [
-  {
-    title: "Leise hier",
-    src: "/videos/leise-hier.mp4",
-    description: "Ein ruhiger, gefühlvoller Song mit stiller Atmosphäre.",
-  },
-  {
-    title: "Die Starken",
-    src: "/videos/die-starken.mp4",
-    description: "Ein Song über Stärke und Haltung.",
-  },
-  {
-    title: "Ohne viele Worte",
-    src: "/videos/ohne-viele-worte.mp4",
-    description: "Leise Töne, klare Gefühle.",
-  },
-  {
-    title: "Genau hier",
-    src: "/videos/genau-hier.mp4",
-    description: "Ein Song über Ankommen und Nähe.",
-  },
-  {
-    title: "Ich bin genug",
-    src: "/videos/ich-bin-genug.mp4",
-    description: "Persönlich und kraftvoll.",
-  },
-  {
-    title: "Ich fall und ich steh",
-    src: "/videos/ich-fall-und-ich-steh.mp4",
-    description: "Über Rückschläge und Weitermachen.",
-  },
-  
-  {
-    title: "Immer noch an meiner Seite",
-    src: "/videos/immer-noch-an-meiner-seite.mp4",
-    description: "Über Nähe, die bleibt.",
-  },
-  {
-    title: "Wir sehen dich",
-    src: "/videos/wir-sehen-dich.mp4",
-    description: "Ein Song über Wahrnehmung und Wert.",
-  },
-   
-  {
-  title: "Ich bleib bei mir",
-    src: "/videos/ich-bleib-bei-mir.mp4",
-    description: "Ein Song darüber, warum man nicht einsam ist, wenn man allein ist.",
-  },
-   {
-  title: "Ich bin noch hier",
-    src: "/videos/ich-bin-noch-hier.mp4",
-    description: "Ein sehr gefühlvoller Sprechgesang über das Dasein und die Präsenz.",
-  },
-   {
-  title: "Ich war kurz weg",
-    src: "/videos/ich-war-kurz-weg.mp4",
-    description: "Ein sehr gefühlvoller Sprechgesang.",
-  },
-  {
-  title: "Manchmal denk ich...",
-    src: "/videos/manchmal-denk-ich.mp4",
-    description: "minimalistischer Monolog-Song",
-  },
-  {
-  title: "Ich hab mich gewählt",
-    src: "/videos/ich-hab-mich-gewählt.mp4",
-    description: "Ich stehe jetzt für mich ein – aber ohne laut zu werden",
-  },
-  {
-  title: "Ich bin noch ich",
-    src: "/videos/ich-bin-noch-ich.mp4",
-    description: "Ist man ein anderer Mensch geworden, nur weil man älter wird?",
-  },
-   {
-  title: "Meine Schritte",
-    src: "/videos/meine-schritte.mp4",
-    description: "Mein Weg zu mir selbst",
-  },
-   {
-  title: "Meine Schritte- Version 2",
-    src: "/videos/meine-schritte-version-2.mp4",
-    description: "Mein Weg zu mir selbst",
-  },
- {
-  title: "Wenn ich mir damals begegnen würde",
-    src: "/videos/wenn-ich-mir-damals-begegnen-würde.mp4",
-    description: "Ein Song wie ein Gespräch mit meinem früheren Ich",
-  }, 
-  {
-  title: "Sanfte Power",
-    src: "/videos/sanfte-power.mp4",
-    description: "Der Weg zu mir selbst",
-  },
-  {
-  title: "Sanfte Power- Version 2",
-    src: "/videos/sanfte-power-version-2.mp4",
-    description: "Der Weg zu mir selbst",
-  },
-{
-  title: "Unter der Oberfläche",
-    src: "/videos/unter-der-oberfläche.mp4",
-    description: "mein kompletter Stil in einem Song – leise, aber mit viel Power und Gefühl",
-  },  
-  {
-  title: "Ein ganz normaler Morgen",
-    src: "/videos/ein-ganz-normaler-morgen.mp4",
-    description: "ich bin bei mir, ich brauche nichts anderes mehr, ich genieße die Stille und den Augenblick",
-  },
-  {
-  title: "Ein ganz normaler Morgen",
-    src: "/videos/ein-ganz-normaler-morgen-version 2.mp4",
-    description: "Kopfhörer auf, Augen zu, genießen – ein Song über das Ankommen bei sich selbst und die Schönheit der Stille",
-  }, 
-  {
-  title: "Bevor der Sommer ging",
-    src: "/videos/bevor-der-sommer-ging.mp4",
-    description: "Ein Lied wie eine leichte Brise, die an einem warmen Sommerabend vorbeizieht ",
-  },
-  {
-  title: "Der Morgen atmet leise",
-    src: "/videos/der-morgen-atmet-leise.mp4",
-    description: "Ein Song über das Ankommen bei sich selbst und die Schönheit der Stille",
-  },
-  {
-  title: "Zwischen den Straßenlichtern",
-    src: "/videos/zwischen-den-straßenlichtern.mp4",
-    description: "Ein Song über das Ankommen bei sich selbst und die Schönheit der Stille",
-  },
-  {
-  title: "Was ist Glück",
-    src: "/videos/was-ist-glueck .mp4",
-    description: "Das Glück liegt in den kleinen Dingen, die wir oft übersehen – ein Song über das bewusste Wahrnehmen und Genießen des Moments",
-  },
-  {
-  title: "What is happiness",
-    src: "/videos/what-is-happiness.mp4",
-    description: "Englische Version im Sade-Stil",
-  },
-  {
-  title: "I`m letting myself been seen",
-    src: "/videos/i`m-letting-myself-been-seen.mp4",
-    description: "Englische Version von Ich zeige mich ",
-  },
-  {
-  title: "Ich zeige Mich",
-    src: "/videos/ich-zeige-mich.mp4",
-    description: "Körper werden nicht Kommentiert!",
-  },
-  {
-  title: "Silence isn`t stand still",
-    src: "/videos/silence-isn`t-stand-still.mp4",
-    description: "Englische Version von Stille ist kein Stillstand",
-  },
-  {
-  title: "Stille ist kein Stillstand",
-    src: "/videos/stille-ist-kein-stillstand.mp4",
-    description: "Stille bedeutet nicht Schwäche,sie bedeutet innehalten.",
-  },
-  {
-  title: " Sommer Beat",
-    src: "/videos/sommer-beat.mp4",
-    description: "Meine Sicht auf den Sommer, wie er wirklich ist, nicht geschönt oder romantisiert.",
-  },
- {
-  title: " Quietly here",
-    src: "/videos/quietly_here_own_voice.mp4",
-    description: "Englische Version von Leise hier- neu arrangiert mit meiner eigenen Stimme, die ich noch nie zuvor in einem Song verwendet habe.",
-    },
-      {
-  title: " Der Fluss",
-    src: "/videos/der-fluss.mp4",
-    description: " Wenn Gedanken einen nicht mehr loslassen, ist es wie ein Fluss, der einen mitreißt. Manchmal muss man sich treiben lassen, um wieder zu sich selbst zu finden.",
-  },
-    {
-  title: " Sommer Beat",
-    src: "/videos/sommer-beat.mp4",
-    description: "Meine Sicht auf den Sommer, wie er wirklich ist, nicht geschönt oder romantisiert.",
-  },
-  {
-  title: " Ein letzter Schritt",
-    src: "/videos/ein-letzter-schritt.mp4",
-    description: "Tango meets Dark Wave - oder.... wer verführt hier eigentlich wen?"
-  },
-  {
-  title: " Grey Bumblebee",
-    src: "/videos/grey-bumblebee.mp4",
-    description: " Diss Track - Bumblebee zeigt wie das geht, mit Ironie und Witz- ohne Herabwürdigung und Menschenverachtung."
-  },
-];
 const photos = [
   {
     title: "Fotografie 1",
@@ -320,12 +132,12 @@ function Header({
   return (
     <header className="header">
       <CursorGlow />
-      <div className="logo" onClick={() => setPage("home")}>
+      <button type="button" className="logo" aria-label="Sumsum – Startseite" onClick={() => setPage("home")}>
         <img src={bee} alt="Sumsum Logo" />
         <span>Sumsum</span>
-      </div>
+      </button>
 
-      <nav>
+      <nav aria-label="Hauptnavigation">
   <button
     className={page === "music" ? "active" : ""}
     onClick={() => setPage("music")}
@@ -347,11 +159,11 @@ function Header({
 </button>
 
 <div className="social-icons">
-  <a href="https://www.instagram.com/sumsum165?igsh=ODZzNm8xZ3gyd3o0" target="_blank" rel="noreferrer">
+  <a aria-label="Instagram" href="https://www.instagram.com/sumsum165?igsh=ODZzNm8xZ3gyd3o0" target="_blank" rel="noreferrer">
     <InstagramIcon />
   </a>
 
-  <a href="https://www.tiktok.com/@sumsum8856?_r=1&_t=ZG-95jvqS2GDcO" target="_blank" rel="noreferrer">
+  <a aria-label="TikTok" href="https://www.tiktok.com/@sumsum8856?_r=1&_t=ZG-95jvqS2GDcO" target="_blank" rel="noreferrer">
     <TikTokIcon />
   </a>
 </div>
@@ -360,8 +172,8 @@ function Header({
     </header>
   );
 }
-function pauseOtherVideos(currentVideo: HTMLVideoElement) {
-  const allVideos = document.querySelectorAll("video");
+function pauseOtherVideos(currentVideo: HTMLMediaElement) {
+  const allVideos = document.querySelectorAll<HTMLMediaElement>("video, audio");
 
   allVideos.forEach((video) => {
     if (video !== currentVideo) {
@@ -379,42 +191,10 @@ export default function App() {
         <Header setPage={setPage} page={page} />
         <div className="overlay" />
 
-        <section className="content-page fade-in">
-          <h1 className="page-title">🎵 Musik</h1>
-          <p className="page-text">
-            Hier findest du meine Songs – direkt als Video.
-          </p>
-
-          <div className="song-grid">
-            {songs.map((song) => (
-              <article key={song.title} className="song-card">
-                <h2>{song.title}</h2>
-                <p>{song.description}</p>
-
-                <video
-                  className="media-player"
-                  src={song.src}
-                  muted
-                  loop
-                  playsInline
-                  onMouseEnter={(e) => e.currentTarget.play()}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.pause();
-                    e.currentTarget.currentTime = 0;
-                  }}
-                  onClick={(e) => {
-                    e.currentTarget.muted = false;
-                    e.currentTarget.play();
-                  }}
-                  onPlay={(e) => pauseOtherVideos(e.currentTarget)}
-                  controls
-                />
-              </article>
-            ))}
-          </div>
-
+        <section className="content-page fade-in music-page">
+          <MusicLibrary />
           <button className="btn secondary back-btn" onClick={() => setPage("home")}>
-            ← Zurück
+            ← Zur Startseite
           </button>
         </section>
       </main>
@@ -575,7 +355,9 @@ export default function App() {
      <Header setPage={setPage} page={page} />
       <div className="overlay" />
 
-      <section className="hero fade-in">
+      <section className="hero hero-profile fade-in">
+        <div className="hero-copy">
+        <p className="eyebrow">Willkommen in meiner kreativen Welt</p>
         <h1 className="title">Sumsum</h1>
         <p className="subtitle">Musik. Ideen. Herzensprojekte.</p>
 
@@ -598,6 +380,10 @@ export default function App() {
             📱 App ansehen
           </button>
         </div>
+        </div>
+        <figure className="portrait-frame">
+          <img src="/images/sasum-portrait.jpg" alt="Porträt von Sumsum in warmer Atmosphäre mit Büchern, Musik und einer schwarzen Katze" width="1024" height="1536" fetchPriority="high" />
+        </figure>
       </section>
     </main>
   );

@@ -1,0 +1,515 @@
+[
+  {
+    "id": "song-01",
+    "title": "Leise hier",
+    "description": "Ein ruhiger, gefühlvoller Song mit stiller Atmosphäre.",
+    "category": "Ruhe & Gefühl",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/leise-hier.mp3",
+        "video": "/videos/leise-hier.mp4",
+        "cover": "/covers/song-01.jpg"
+      }
+    ]
+  },
+  {
+    "id": "song-02",
+    "title": "Die Starken",
+    "description": "Ein Song über Stärke und Haltung.",
+    "category": "Kraft & Selbstvertrauen",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/die-starken.mp3",
+        "video": "/videos/die-starken.mp4",
+        "cover": "/covers/song-02.jpg"
+      }
+    ]
+  },
+  {
+    "id": "song-03",
+    "title": "Ohne viele Worte",
+    "description": "Leise Töne, klare Gefühle.",
+    "category": "Ruhe & Gefühl",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/ohne-viele-worte.mp3",
+        "video": "/videos/ohne-viele-worte.mp4",
+        "cover": "/covers/song-03.jpg"
+      }
+    ]
+  },
+  {
+    "id": "song-04",
+    "title": "Genau hier",
+    "description": "Ein Song über Ankommen und Nähe.",
+    "category": "Ruhe & Gefühl",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/genau-hier.mp3",
+        "video": "/videos/genau-hier.mp4",
+        "cover": "/covers/song-04.jpg"
+      }
+    ]
+  },
+  {
+    "id": "song-05",
+    "title": "Ich bin genug",
+    "description": "Persönlich und kraftvoll.",
+    "category": "Kraft & Selbstvertrauen",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/ich-bin-genug.mp3",
+        "video": "/videos/ich-bin-genug.mp4",
+        "cover": "/covers/song-05.jpg"
+      }
+    ]
+  },
+  {
+    "id": "song-06",
+    "title": "Ich fall und ich steh",
+    "description": "Über Rückschläge und Weitermachen.",
+    "category": "Kraft & Selbstvertrauen",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/ich-fall-und-ich-steh.mp3",
+        "video": "/videos/ich-fall-und-ich-steh.mp4",
+        "cover": "/covers/song-06.jpg"
+      }
+    ]
+  },
+  {
+    "id": "song-07",
+    "title": "Immer noch an meiner Seite",
+    "description": "Über Nähe, die bleibt.",
+    "category": "Ruhe & Gefühl",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/immer-noch-an-meiner-seite.mp3",
+        "video": "/videos/immer-noch-an-meiner-seite.mp4",
+        "cover": "/covers/song-07.jpg"
+      }
+    ]
+  },
+  {
+    "id": "song-08",
+    "title": "Wir sehen dich",
+    "description": "Ein Song über Wahrnehmung und Wert.",
+    "category": "Kraft & Selbstvertrauen",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/wir-sehen-dich.mp3",
+        "video": "/videos/wir-sehen-dich.mp4",
+        "cover": "/covers/song-08.jpg"
+      }
+    ]
+  },
+  {
+    "id": "song-09",
+    "title": "Ich bleib bei mir",
+    "description": "Ein Song darüber, warum man nicht einsam ist, wenn man allein ist.",
+    "category": "Kraft & Selbstvertrauen",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/song-09.mp3",
+        "video": "/videos/ich-bleib-bei-mir.mp4",
+        "cover": "/covers/song-09.jpg"
+      }
+    ]
+  },
+  {
+    "id": "song-10",
+    "title": "Ich bin noch hier",
+    "description": "Ein sehr gefühlvoller Sprechgesang über das Dasein und die Präsenz.",
+    "category": "Sprechgesang",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/song-10.mp3",
+        "video": "/videos/ich-bin-noch-hier.mp4",
+        "cover": "/covers/song-10.jpg"
+      }
+    ]
+  },
+  {
+    "id": "song-11",
+    "title": "Ich war kurz weg",
+    "description": "Ein sehr gefühlvoller Sprechgesang.",
+    "category": "Sprechgesang",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/song-11.mp3",
+        "video": "/videos/ich-war-kurz-weg.mp4",
+        "cover": "/covers/song-11.jpg"
+      }
+    ]
+  },
+  {
+    "id": "song-12",
+    "title": "Manchmal denk ich...",
+    "description": "minimalistischer Monolog-Song",
+    "category": "Sprechgesang",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/song-12.mp3",
+        "video": "/videos/manchmal-denk-ich.mp4",
+        "cover": "/covers/song-12.jpg"
+      }
+    ]
+  },
+  {
+    "id": "song-13",
+    "title": "Ich hab mich gewählt",
+    "description": "Ich stehe jetzt für mich ein – aber ohne laut zu werden",
+    "category": "Kraft & Selbstvertrauen",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/song-13.mp3",
+        "video": "/videos/ich-hab-mich-gewählt.mp4",
+        "cover": "/covers/song-13.jpg"
+      }
+    ]
+  },
+  {
+    "id": "song-14",
+    "title": "Ich bin noch ich",
+    "description": "Ist man ein anderer Mensch geworden, nur weil man älter wird?",
+    "category": "Kraft & Selbstvertrauen",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/song-14.mp3",
+        "video": "/videos/ich-bin-noch-ich.mp4",
+        "cover": "/covers/song-14.jpg"
+      }
+    ]
+  },
+  {
+    "id": "song-15",
+    "title": "Meine Schritte",
+    "description": "Mein Weg zu mir selbst",
+    "category": "Kraft & Selbstvertrauen",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/song-15.mp3",
+        "video": "/videos/meine-schritte.mp4",
+        "cover": "/covers/song-15.jpg"
+      },
+      {
+        "label": "Version 2",
+        "audio": "/music/song-16.mp3",
+        "video": "/videos/meine-schritte-version-2.mp4",
+        "cover": "/covers/song-16.jpg"
+      }
+    ]
+  },
+  {
+    "id": "song-17",
+    "title": "Wenn ich mir damals begegnen würde",
+    "description": "Ein Song wie ein Gespräch mit meinem früheren Ich",
+    "category": "Ruhe & Gefühl",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/song-17.mp3",
+        "video": "/videos/wenn-ich-mir-damals-begegnen-würde.mp4",
+        "cover": "/covers/song-17.jpg"
+      }
+    ]
+  },
+  {
+    "id": "song-18",
+    "title": "Sanfte Power",
+    "description": "Der Weg zu mir selbst",
+    "category": "Kraft & Selbstvertrauen",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/song-18.mp3",
+        "video": "/videos/sanfte-power.mp4",
+        "cover": "/covers/song-18.jpg"
+      },
+      {
+        "label": "Version 2",
+        "audio": "/music/song-19.mp3",
+        "video": "/videos/sanfte-power-version-2.mp4",
+        "cover": "/covers/song-19.jpg"
+      }
+    ]
+  },
+  {
+    "id": "song-20",
+    "title": "Unter der Oberfläche",
+    "description": "mein kompletter Stil in einem Song – leise, aber mit viel Power und Gefühl",
+    "category": "Ruhe & Gefühl",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/song-20.mp3",
+        "video": "/videos/unter-der-oberfläche.mp4",
+        "cover": "/covers/song-20.jpg"
+      }
+    ]
+  },
+  {
+    "id": "song-21",
+    "title": "Ein ganz normaler Morgen",
+    "description": "ich bin bei mir, ich brauche nichts anderes mehr, ich genieße die Stille und den Augenblick",
+    "category": "Ruhe & Gefühl",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/song-21.mp3",
+        "video": "/videos/ein-ganz-normaler-morgen.mp4",
+        "cover": "/covers/song-21.jpg"
+      },
+      {
+        "label": "Version 2",
+        "audio": "/music/song-22.mp3",
+        "video": "/videos/ein-ganz-normaler-morgen-version 2.mp4",
+        "cover": "/covers/song-22.jpg"
+      }
+    ]
+  },
+  {
+    "id": "song-23",
+    "title": "Bevor der Sommer ging",
+    "description": "Ein Lied wie eine leichte Brise, die an einem warmen Sommerabend vorbeizieht",
+    "category": "Ruhe & Gefühl",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/song-23.mp3",
+        "video": "/videos/bevor-der-sommer-ging.mp4",
+        "cover": "/covers/song-23.jpg"
+      }
+    ]
+  },
+  {
+    "id": "song-24",
+    "title": "Der Morgen atmet leise",
+    "description": "Ein Song über das Ankommen bei sich selbst und die Schönheit der Stille",
+    "category": "Ruhe & Gefühl",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/song-24.mp3",
+        "video": "/videos/der-morgen-atmet-leise.mp4",
+        "cover": "/covers/song-24.jpg"
+      }
+    ]
+  },
+  {
+    "id": "song-25",
+    "title": "Zwischen den Straßenlichtern",
+    "description": "Ein Song über das Ankommen bei sich selbst und die Schönheit der Stille",
+    "category": "Ruhe & Gefühl",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/song-25.mp3",
+        "video": "/videos/zwischen-den-straßenlichtern.mp4",
+        "cover": "/covers/song-25.jpg"
+      }
+    ]
+  },
+  {
+    "id": "song-26",
+    "title": "Was ist Glück",
+    "description": "Das Glück liegt in den kleinen Dingen, die wir oft übersehen – ein Song über das bewusste Wahrnehmen und Genießen des Moments",
+    "category": "Ruhe & Gefühl",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/song-26.mp3",
+        "video": "/videos/was-ist-glueck .mp4",
+        "cover": "/covers/song-26.jpg"
+      }
+    ]
+  },
+  {
+    "id": "song-27",
+    "title": "What is happiness",
+    "description": "Englische Version im Sade-Stil",
+    "category": "Ruhe & Gefühl",
+    "language": "en",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/song-27.mp3",
+        "video": "/videos/what-is-happiness.mp4",
+        "cover": "/covers/song-27.jpg"
+      }
+    ]
+  },
+  {
+    "id": "song-28",
+    "title": "I`m letting myself been seen",
+    "description": "Englische Version von Ich zeige mich",
+    "category": "Kraft & Selbstvertrauen",
+    "language": "en",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/song-28.mp3",
+        "video": "/videos/i`m-letting-myself-been-seen.mp4",
+        "cover": "/covers/song-28.jpg"
+      }
+    ]
+  },
+  {
+    "id": "song-29",
+    "title": "Ich zeige Mich",
+    "description": "Körper werden nicht Kommentiert!",
+    "category": "Kraft & Selbstvertrauen",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/song-29.mp3",
+        "video": "/videos/ich-zeige-mich.mp4",
+        "cover": "/covers/song-29.jpg"
+      }
+    ]
+  },
+  {
+    "id": "song-30",
+    "title": "Silence isn`t stand still",
+    "description": "Englische Version von Stille ist kein Stillstand",
+    "category": "Kraft & Selbstvertrauen",
+    "language": "en",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/song-30.mp3",
+        "video": "/videos/silence-isn`t-stand-still.mp4",
+        "cover": "/covers/song-30.jpg"
+      }
+    ]
+  },
+  {
+    "id": "song-31",
+    "title": "Stille ist kein Stillstand",
+    "description": "Stille bedeutet nicht Schwäche,sie bedeutet innehalten.",
+    "category": "Kraft & Selbstvertrauen",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/song-31.mp3",
+        "video": "/videos/stille-ist-kein-stillstand.mp4",
+        "cover": "/covers/song-31.jpg"
+      }
+    ]
+  },
+  {
+    "id": "song-32",
+    "title": "Sommer Beat",
+    "description": "Meine Sicht auf den Sommer, wie er wirklich ist, nicht geschönt oder romantisiert.",
+    "category": "Rhythmus & Energie",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/song-32.mp3",
+        "video": "/videos/sommer-beat.mp4",
+        "cover": "/covers/song-32.jpg"
+      }
+    ]
+  },
+  {
+    "id": "song-33",
+    "title": "Quietly here",
+    "description": "Englische Version von Leise hier- neu arrangiert mit meiner eigenen Stimme, die ich noch nie zuvor in einem Song verwendet habe.",
+    "category": "Ruhe & Gefühl",
+    "language": "en",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/song-33.mp3",
+        "video": "/videos/quietly_here_own_voice.mp4",
+        "cover": "/covers/song-33.jpg"
+      }
+    ]
+  },
+  {
+    "id": "song-34",
+    "title": "Der Fluss",
+    "description": "Wenn Gedanken einen nicht mehr loslassen, ist es wie ein Fluss, der einen mitreißt. Manchmal muss man sich treiben lassen, um wieder zu sich selbst zu finden.",
+    "category": "Ruhe & Gefühl",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/song-34.mp3",
+        "video": "/videos/der-fluss.mp4",
+        "cover": "/covers/song-34.jpg"
+      }
+    ]
+  },
+  {
+    "id": "song-35",
+    "title": "Ein letzter Schritt",
+    "description": "Tango meets Dark Wave - oder.... wer verführt hier eigentlich wen?",
+    "category": "Rhythmus & Energie",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/song-35.mp3",
+        "video": "/videos/ein-letzter-schritt.mp4",
+        "cover": "/covers/song-35.jpg"
+      }
+    ]
+  },
+  {
+    "id": "song-36",
+    "title": "Grey Bumblebee",
+    "description": "Diss Track - Bumblebee zeigt wie das geht, mit Ironie und Witz- ohne Herabwürdigung und Menschenverachtung.",
+    "category": "Rhythmus & Energie",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/song-36.mp3",
+        "video": "/videos/grey-bumblebee.mp4",
+        "cover": "/covers/song-36.jpg"
+      }
+    ]
+  }
+]
