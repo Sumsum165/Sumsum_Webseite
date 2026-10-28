@@ -3,7 +3,7 @@
     "id": "song-01",
     "title": "Leise hier",
     "description": "Ein ruhiger, gefühlvoller Song mit stiller Atmosphäre.",
-    "category": "Ruhe & Gefühl",
+    "category": "Frühe Songs",
     "language": "de",
     "versions": [
       {
@@ -11,14 +11,22 @@
         "audio": "/music/leise-hier.mp3",
         "video": "/videos/leise-hier.mp4",
         "cover": "/covers/song-01.jpg"
+      },
+      {
+        "label": "Mit Sabines Stimme",
+        "audio": "/music/final-e273cb0e2ce6.mp3",
+        "duration": 233,
+        "description": "",
+        "cover": "/covers/song-01.jpg"
       }
-    ]
+    ],
+    "newAddition": true
   },
   {
     "id": "song-02",
     "title": "Die Starken",
     "description": "Ein Song über Stärke und Haltung.",
-    "category": "Kraft & Selbstvertrauen",
+    "category": "Frühe Songs",
     "language": "de",
     "versions": [
       {
@@ -26,14 +34,30 @@
         "audio": "/music/die-starken.mp3",
         "video": "/videos/die-starken.mp4",
         "cover": "/covers/song-02.jpg"
+      },
+      {
+        "label": "Mureka-Fassung",
+        "audio": "/music/final-65377f615e1e.mp3",
+        "duration": 281,
+        "cover": "/covers/final-65377f615e1e.jpg",
+        "description": ""
+      },
+      {
+        "label": "Symphonische Fassung",
+        "audio": "/music/final-205121ceee16.mp3",
+        "duration": 295,
+        "cover": "/covers/final-205121ceee16.jpg",
+        "description": "",
+        "video": "/videos/final-205121ceee16.mp4"
       }
-    ]
+    ],
+    "newAddition": true
   },
   {
     "id": "song-03",
     "title": "Ohne viele Worte",
     "description": "Leise Töne, klare Gefühle.",
-    "category": "Ruhe & Gefühl",
+    "category": "Frühe Songs",
     "language": "de",
     "versions": [
       {
@@ -48,7 +72,7 @@
     "id": "song-04",
     "title": "Genau hier",
     "description": "Ein Song über Ankommen und Nähe.",
-    "category": "Ruhe & Gefühl",
+    "category": "Frühe Songs",
     "language": "de",
     "versions": [
       {
@@ -63,7 +87,7 @@
     "id": "song-05",
     "title": "Ich bin genug",
     "description": "Persönlich und kraftvoll.",
-    "category": "Kraft & Selbstvertrauen",
+    "category": "Frühe Songs",
     "language": "de",
     "versions": [
       {
@@ -78,7 +102,7 @@
     "id": "song-06",
     "title": "Ich fall und ich steh",
     "description": "Über Rückschläge und Weitermachen.",
-    "category": "Kraft & Selbstvertrauen",
+    "category": "Frühe Songs",
     "language": "de",
     "versions": [
       {
@@ -93,7 +117,7 @@
     "id": "song-07",
     "title": "Immer noch an meiner Seite",
     "description": "Über Nähe, die bleibt.",
-    "category": "Ruhe & Gefühl",
+    "category": "Frühe Songs",
     "language": "de",
     "versions": [
       {
@@ -108,7 +132,7 @@
     "id": "song-08",
     "title": "Wir sehen dich",
     "description": "Ein Song über Wahrnehmung und Wert.",
-    "category": "Kraft & Selbstvertrauen",
+    "category": "Frühe Songs",
     "language": "de",
     "versions": [
       {
@@ -123,7 +147,7 @@
     "id": "song-09",
     "title": "Ich bleib bei mir",
     "description": "Ein Song darüber, warum man nicht einsam ist, wenn man allein ist.",
-    "category": "Kraft & Selbstvertrauen",
+    "category": "Frühe Songs",
     "language": "de",
     "versions": [
       {
@@ -138,7 +162,7 @@
     "id": "song-10",
     "title": "Ich bin noch hier",
     "description": "Ein sehr gefühlvoller Sprechgesang über das Dasein und die Präsenz.",
-    "category": "Sprechgesang",
+    "category": "Frühe Songs",
     "language": "de",
     "versions": [
       {
@@ -153,7 +177,7 @@
     "id": "song-11",
     "title": "Ich war kurz weg",
     "description": "Ein sehr gefühlvoller Sprechgesang.",
-    "category": "Sprechgesang",
+    "category": "Frühe Songs",
     "language": "de",
     "versions": [
       {
@@ -168,7 +192,7 @@
     "id": "song-12",
     "title": "Manchmal denk ich...",
     "description": "minimalistischer Monolog-Song",
-    "category": "Sprechgesang",
+    "category": "Frühe Songs",
     "language": "de",
     "versions": [
       {
@@ -183,7 +207,7 @@
     "id": "song-13",
     "title": "Ich hab mich gewählt",
     "description": "Ich stehe jetzt für mich ein – aber ohne laut zu werden",
-    "category": "Kraft & Selbstvertrauen",
+    "category": "Frühe Songs",
     "language": "de",
     "versions": [
       {
@@ -198,7 +222,7 @@
     "id": "song-14",
     "title": "Ich bin noch ich",
     "description": "Ist man ein anderer Mensch geworden, nur weil man älter wird?",
-    "category": "Kraft & Selbstvertrauen",
+    "category": "Frühe Songs",
     "language": "de",
     "versions": [
       {
@@ -213,7 +237,7 @@
     "id": "song-15",
     "title": "Meine Schritte",
     "description": "Mein Weg zu mir selbst",
-    "category": "Kraft & Selbstvertrauen",
+    "category": "Frühe Songs",
     "language": "de",
     "versions": [
       {
@@ -234,7 +258,7 @@
     "id": "song-17",
     "title": "Wenn ich mir damals begegnen würde",
     "description": "Ein Song wie ein Gespräch mit meinem früheren Ich",
-    "category": "Ruhe & Gefühl",
+    "category": "Frühe Songs",
     "language": "de",
     "versions": [
       {
@@ -249,7 +273,7 @@
     "id": "song-18",
     "title": "Sanfte Power",
     "description": "Der Weg zu mir selbst",
-    "category": "Kraft & Selbstvertrauen",
+    "category": "Frühe Songs",
     "language": "de",
     "versions": [
       {
@@ -270,7 +294,7 @@
     "id": "song-20",
     "title": "Unter der Oberfläche",
     "description": "mein kompletter Stil in einem Song – leise, aber mit viel Power und Gefühl",
-    "category": "Ruhe & Gefühl",
+    "category": "Dark Wave",
     "language": "de",
     "versions": [
       {
@@ -285,7 +309,7 @@
     "id": "song-21",
     "title": "Ein ganz normaler Morgen",
     "description": "ich bin bei mir, ich brauche nichts anderes mehr, ich genieße die Stille und den Augenblick",
-    "category": "Ruhe & Gefühl",
+    "category": "Frühe Songs",
     "language": "de",
     "versions": [
       {
@@ -306,7 +330,7 @@
     "id": "song-23",
     "title": "Bevor der Sommer ging",
     "description": "Ein Lied wie eine leichte Brise, die an einem warmen Sommerabend vorbeizieht",
-    "category": "Ruhe & Gefühl",
+    "category": "Frühe Songs",
     "language": "de",
     "versions": [
       {
@@ -321,7 +345,7 @@
     "id": "song-24",
     "title": "Der Morgen atmet leise",
     "description": "Ein Song über das Ankommen bei sich selbst und die Schönheit der Stille",
-    "category": "Ruhe & Gefühl",
+    "category": "Frühe Songs",
     "language": "de",
     "versions": [
       {
@@ -336,7 +360,7 @@
     "id": "song-25",
     "title": "Zwischen den Straßenlichtern",
     "description": "Ein Song über das Ankommen bei sich selbst und die Schönheit der Stille",
-    "category": "Ruhe & Gefühl",
+    "category": "Frühe Songs",
     "language": "de",
     "versions": [
       {
@@ -351,7 +375,7 @@
     "id": "song-26",
     "title": "Was ist Glück",
     "description": "Das Glück liegt in den kleinen Dingen, die wir oft übersehen – ein Song über das bewusste Wahrnehmen und Genießen des Moments",
-    "category": "Ruhe & Gefühl",
+    "category": "Frühe Songs",
     "language": "de",
     "versions": [
       {
@@ -366,7 +390,7 @@
     "id": "song-27",
     "title": "What is happiness",
     "description": "Englische Version im Sade-Stil",
-    "category": "Ruhe & Gefühl",
+    "category": "Soul & R&B",
     "language": "en",
     "versions": [
       {
@@ -381,7 +405,7 @@
     "id": "song-28",
     "title": "I`m letting myself been seen",
     "description": "Englische Version von Ich zeige mich",
-    "category": "Kraft & Selbstvertrauen",
+    "category": "Soul & R&B",
     "language": "en",
     "versions": [
       {
@@ -396,7 +420,7 @@
     "id": "song-29",
     "title": "Ich zeige Mich",
     "description": "Körper werden nicht Kommentiert!",
-    "category": "Kraft & Selbstvertrauen",
+    "category": "Soul & R&B",
     "language": "de",
     "versions": [
       {
@@ -411,7 +435,7 @@
     "id": "song-30",
     "title": "Silence isn`t stand still",
     "description": "Englische Version von Stille ist kein Stillstand",
-    "category": "Kraft & Selbstvertrauen",
+    "category": "Soul & R&B",
     "language": "en",
     "versions": [
       {
@@ -426,7 +450,7 @@
     "id": "song-31",
     "title": "Stille ist kein Stillstand",
     "description": "Stille bedeutet nicht Schwäche,sie bedeutet innehalten.",
-    "category": "Kraft & Selbstvertrauen",
+    "category": "Soul & R&B",
     "language": "de",
     "versions": [
       {
@@ -441,7 +465,7 @@
     "id": "song-32",
     "title": "Sommer Beat",
     "description": "Meine Sicht auf den Sommer, wie er wirklich ist, nicht geschönt oder romantisiert.",
-    "category": "Rhythmus & Energie",
+    "category": "Experimente",
     "language": "de",
     "versions": [
       {
@@ -456,7 +480,7 @@
     "id": "song-33",
     "title": "Quietly here",
     "description": "Englische Version von Leise hier- neu arrangiert mit meiner eigenen Stimme, die ich noch nie zuvor in einem Song verwendet habe.",
-    "category": "Ruhe & Gefühl",
+    "category": "Soul & R&B",
     "language": "en",
     "versions": [
       {
@@ -464,14 +488,30 @@
         "audio": "/music/song-33.mp3",
         "video": "/videos/quietly_here_own_voice.mp4",
         "cover": "/covers/song-33.jpg"
+      },
+      {
+        "label": "Weitere Audiofassung",
+        "audio": "/music/final-f8ac4df416ed.mp3",
+        "duration": 290,
+        "cover": "/covers/final-f8ac4df416ed.jpg",
+        "description": ""
+      },
+      {
+        "label": "Weitere Videofassung",
+        "audio": "/music/final-2e834efb7d1f.mp3",
+        "duration": 235,
+        "cover": "/covers/final-2e834efb7d1f.jpg",
+        "description": "",
+        "video": "/videos/final-2e834efb7d1f.mp4"
       }
-    ]
+    ],
+    "newAddition": true
   },
   {
     "id": "song-34",
     "title": "Der Fluss",
     "description": "Wenn Gedanken einen nicht mehr loslassen, ist es wie ein Fluss, der einen mitreißt. Manchmal muss man sich treiben lassen, um wieder zu sich selbst zu finden.",
-    "category": "Ruhe & Gefühl",
+    "category": "Dark Wave",
     "language": "de",
     "versions": [
       {
@@ -486,7 +526,7 @@
     "id": "song-35",
     "title": "Ein letzter Schritt",
     "description": "Tango meets Dark Wave - oder.... wer verführt hier eigentlich wen?",
-    "category": "Rhythmus & Energie",
+    "category": "Stilmix",
     "language": "de",
     "versions": [
       {
@@ -501,7 +541,7 @@
     "id": "song-36",
     "title": "Grey Bumblebee",
     "description": "Diss Track - Bumblebee zeigt wie das geht, mit Ironie und Witz- ohne Herabwürdigung und Menschenverachtung.",
-    "category": "Rhythmus & Energie",
+    "category": "Bumblebee Rap",
     "language": "de",
     "versions": [
       {
@@ -509,7 +549,904 @@
         "audio": "/music/song-36.mp3",
         "video": "/videos/grey-bumblebee.mp4",
         "cover": "/covers/song-36.jpg"
+      },
+      {
+        "label": "Weitere MP3-Fassung",
+        "audio": "/music/final-7c86ecd175be.mp3",
+        "duration": 232,
+        "cover": "/covers/final-7c86ecd175be.jpg",
+        "description": ""
       }
-    ]
+    ],
+    "newAddition": true
+  },
+  {
+    "id": "track-f2cedcfdb4",
+    "title": "Licht für Kinder",
+    "description": "",
+    "category": "Aktionen",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/final-b23f4887f9e6.mp3",
+        "duration": 363,
+        "cover": "/covers/final-b23f4887f9e6.jpg",
+        "description": "",
+        "video": "/videos/final-b23f4887f9e6.mp4"
+      }
+    ],
+    "newAddition": true
+  },
+  {
+    "id": "track-255730996d",
+    "title": "Ich bin wieder Ich",
+    "description": "",
+    "category": "Dark Wave",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/final-e9adc5ab2444.mp3",
+        "duration": 294,
+        "cover": "/covers/final-e9adc5ab2444.jpg",
+        "description": "",
+        "video": "/videos/final-e9adc5ab2444.mp4",
+        "videoLabel": "Videoausschnitt ansehen"
+      }
+    ],
+    "newAddition": true
+  },
+  {
+    "id": "track-93db5fb4c5",
+    "title": "Il Tormento dei Forti",
+    "description": "",
+    "category": "Frühe Songs",
+    "language": "it",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/final-2826c3ac39b0.mp3",
+        "duration": 120,
+        "cover": "/covers/final-2826c3ac39b0.jpg",
+        "description": ""
+      }
+    ],
+    "newAddition": true
+  },
+  {
+    "id": "track-d7e300c61d",
+    "title": "Nur du",
+    "description": "",
+    "category": "Experimente",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Metal · Finales Master",
+        "audio": "/music/final-c1a25c10125b.mp3",
+        "duration": 181,
+        "cover": "/covers/final-c1a25c10125b.jpg",
+        "description": ""
+      }
+    ],
+    "newAddition": true
+  },
+  {
+    "id": "track-9e2536d7c5",
+    "title": "Parkplatz Leguan",
+    "description": "",
+    "category": "Experimente",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/final-e2683db77277.mp3",
+        "duration": 178,
+        "cover": "/covers/final-e2683db77277.jpg",
+        "description": "",
+        "video": "/videos/final-e2683db77277.mp4"
+      }
+    ],
+    "newAddition": true
+  },
+  {
+    "id": "track-0086f0fd29",
+    "title": "Soft Whispering of the Ocarina",
+    "description": "",
+    "category": "Experimente",
+    "language": "unknown",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/final-6acc8ace8612.mp3",
+        "duration": 203,
+        "cover": "/covers/final-6acc8ace8612.jpg",
+        "description": "",
+        "video": "/videos/final-6acc8ace8612.mp4"
+      }
+    ],
+    "newAddition": true
+  },
+  {
+    "id": "track-a86293bcae",
+    "title": "Aeterna Anima",
+    "description": "",
+    "category": "Gregorian & Deep House",
+    "language": "unknown",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/final-5592c07f82a6.mp3",
+        "duration": 218,
+        "cover": "/covers/final-5592c07f82a6.jpg",
+        "description": "",
+        "video": "/videos/final-5592c07f82a6.mp4"
+      }
+    ],
+    "newAddition": true
+  },
+  {
+    "id": "track-07de1d0982",
+    "title": "Nunc",
+    "description": "",
+    "category": "Gregorian & Deep House",
+    "language": "unknown",
+    "versions": [
+      {
+        "label": "Neue Fassung",
+        "audio": "/music/final-bc973ebeace5.mp3",
+        "duration": 258,
+        "cover": "/covers/final-bc973ebeace5.jpg",
+        "description": ""
+      }
+    ],
+    "newAddition": true
+  },
+  {
+    "id": "track-cfb6162d96",
+    "title": "Echoes Of a Dream",
+    "description": "",
+    "category": "Klassik-Cover",
+    "language": "unknown",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/final-aeed855a48c4.mp3",
+        "duration": 199,
+        "cover": "/covers/final-aeed855a48c4.jpeg",
+        "description": "",
+        "video": "/videos/final-aeed855a48c4.mp4"
+      }
+    ],
+    "newAddition": true
+  },
+  {
+    "id": "track-8fe6c05e8d",
+    "title": "Mozart Mondscheinsonate Cover",
+    "description": "",
+    "category": "Klassik-Cover",
+    "language": "unknown",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/final-d9f4fe9cdd81.mp3",
+        "duration": 178,
+        "cover": "/covers/final-d9f4fe9cdd81.jpg",
+        "description": ""
+      },
+      {
+        "label": "Version 2",
+        "audio": "/music/final-8af5f7d52b69.mp3",
+        "duration": 182,
+        "cover": "/covers/final-8af5f7d52b69.jpg",
+        "description": ""
+      }
+    ],
+    "newAddition": true
+  },
+  {
+    "id": "track-397a5c0a0b",
+    "title": "Mozart’s Out",
+    "description": "",
+    "category": "Klassik-Cover",
+    "language": "unknown",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/final-0c6fef645b0b.mp3",
+        "duration": 262,
+        "description": ""
+      }
+    ],
+    "newAddition": true
+  },
+  {
+    "id": "track-1ecb489be8",
+    "title": "Toccata und Fuge Cover",
+    "description": "",
+    "category": "Klassik-Cover",
+    "language": "unknown",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/final-91e4878c4f2f.mp3",
+        "duration": 219,
+        "description": ""
+      }
+    ],
+    "newAddition": true
+  },
+  {
+    "id": "track-3653a9a9b7",
+    "title": "Die Lampe bleibt an",
+    "description": "",
+    "category": "Pop, Alternative & Balladen",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/final-e133aa24f698.mp3",
+        "duration": 209,
+        "cover": "/covers/final-e133aa24f698.jpg",
+        "description": ""
+      }
+    ],
+    "newAddition": true
+  },
+  {
+    "id": "track-99164098af",
+    "title": "Du bist nicht falsch",
+    "description": "",
+    "category": "Pop, Alternative & Balladen",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/final-87dc0b885d76.mp3",
+        "duration": 254,
+        "cover": "/covers/final-87dc0b885d76.jpg",
+        "description": ""
+      }
+    ],
+    "newAddition": true
+  },
+  {
+    "id": "track-179eb76451",
+    "title": "Gib mir einfach nur Halt",
+    "description": "",
+    "category": "Pop, Alternative & Balladen",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/final-7ac9bf2e85ab.mp3",
+        "duration": 237,
+        "description": ""
+      }
+    ],
+    "newAddition": true
+  },
+  {
+    "id": "track-96bd9ebec0",
+    "title": "Liebe kennt kein Datum",
+    "description": "",
+    "category": "Pop, Alternative & Balladen",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/final-459e41b28a21.mp3",
+        "duration": 233,
+        "cover": "/covers/final-459e41b28a21.jpg",
+        "description": "",
+        "video": "/videos/final-459e41b28a21.mp4"
+      }
+    ],
+    "newAddition": true
+  },
+  {
+    "id": "track-af2a213da4",
+    "title": "Sie bleibt noch kurz im Regen stehen",
+    "description": "",
+    "category": "Pop, Alternative & Balladen",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/final-bd4208a172c6.mp3",
+        "duration": 172,
+        "cover": "/covers/final-bd4208a172c6.jpg",
+        "description": "",
+        "video": "/videos/final-bd4208a172c6.mp4"
+      }
+    ],
+    "newAddition": true
+  },
+  {
+    "id": "track-326cab3c01",
+    "title": "Hömma",
+    "description": "",
+    "category": "Satire",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/final-e6d92b95928f.mp3",
+        "duration": 282,
+        "cover": "/covers/final-e6d92b95928f.jpg",
+        "description": "",
+        "video": "/videos/final-e6d92b95928f.mp4"
+      }
+    ],
+    "newAddition": true
+  },
+  {
+    "id": "track-cc3a512ae4",
+    "title": "Kann ich so raus?",
+    "description": "",
+    "category": "Satire",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Edit",
+        "audio": "/music/final-23591085a9d2.mp3",
+        "duration": 218,
+        "cover": "/covers/final-23591085a9d2.jpg",
+        "description": ""
+      }
+    ],
+    "newAddition": true
+  },
+  {
+    "id": "track-e2703a6a25",
+    "title": "Karma unterschreibt selbst",
+    "description": "",
+    "category": "Satire",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Rap",
+        "audio": "/music/final-8d22dcebe67d.mp3",
+        "duration": 242,
+        "cover": "/covers/final-8d22dcebe67d.jpg",
+        "description": ""
+      }
+    ],
+    "newAddition": true
+  },
+  {
+    "id": "track-296e71a396",
+    "title": "Karma",
+    "description": "",
+    "category": "Satire",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/final-d1fc35ba5c52.mp3",
+        "duration": 242,
+        "cover": "/covers/final-d1fc35ba5c52.jpg",
+        "description": ""
+      }
+    ],
+    "newAddition": true
+  },
+  {
+    "id": "track-02469a0791",
+    "title": "Kunst ist nicht gleich laut",
+    "description": "",
+    "category": "Satire",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/final-4bfd59859c40.mp3",
+        "duration": 170,
+        "cover": "/covers/final-4bfd59859c40.jpg",
+        "description": "",
+        "video": "/videos/final-4bfd59859c40.mp4"
+      }
+    ],
+    "newAddition": true
+  },
+  {
+    "id": "track-1484462ca9",
+    "title": "Tradition im Dorf",
+    "description": "",
+    "category": "Satire",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/final-dd8b2afd93b3.mp3",
+        "duration": 229,
+        "cover": "/covers/final-dd8b2afd93b3.jpg",
+        "description": "",
+        "video": "/videos/final-dd8b2afd93b3.mp4"
+      }
+    ],
+    "newAddition": true
+  },
+  {
+    "id": "track-02a35ca8b1",
+    "title": "Business Outfit",
+    "description": "",
+    "category": "Soul & R&B",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/final-9a33f2c8def1.mp3",
+        "duration": 238,
+        "cover": "/covers/final-9a33f2c8def1.jpg",
+        "description": ""
+      }
+    ],
+    "newAddition": true
+  },
+  {
+    "id": "track-c8dc2b6f18",
+    "title": "Herzschlag der Natur",
+    "description": "",
+    "category": "Soul & R&B",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/final-9af0f2434bfb.mp3",
+        "duration": 315,
+        "description": ""
+      }
+    ],
+    "newAddition": true
+  },
+  {
+    "id": "track-b58f051601",
+    "title": "Du bist mehr",
+    "description": "",
+    "category": "Gesellschaft & Haltung",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Edit",
+        "audio": "/music/final-12f59f2e750f.mp3",
+        "duration": 275,
+        "description": ""
+      }
+    ],
+    "newAddition": true
+  },
+  {
+    "id": "track-b25093cd6d",
+    "title": "Ich bin Mehr",
+    "description": "",
+    "category": "Gesellschaft & Haltung",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/final-37c6b3a5cc0b.mp3",
+        "duration": 179,
+        "cover": "/covers/final-37c6b3a5cc0b.jpg",
+        "description": ""
+      }
+    ],
+    "newAddition": true
+  },
+  {
+    "id": "track-6528536487",
+    "title": "Schweigen ist kein Ja!",
+    "description": "",
+    "category": "Gesellschaft & Haltung",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/final-9b374974dd29.mp3",
+        "duration": 211,
+        "cover": "/covers/final-9b374974dd29.jpg",
+        "description": "",
+        "video": "/videos/final-9b374974dd29.mp4"
+      }
+    ],
+    "newAddition": true
+  },
+  {
+    "id": "track-bd32b5d602",
+    "title": "Spirale",
+    "description": "",
+    "category": "Gesellschaft & Haltung",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/final-22ef4e6087de.mp3",
+        "duration": 162,
+        "description": ""
+      }
+    ],
+    "newAddition": true
+  },
+  {
+    "id": "track-44df784eda",
+    "title": "Give me the style",
+    "description": "",
+    "category": "Stilmix",
+    "language": "en",
+    "versions": [
+      {
+        "label": "Version 6",
+        "audio": "/music/final-ddc15d1f667f.mp3",
+        "duration": 226,
+        "cover": "/covers/final-ddc15d1f667f.jpeg",
+        "description": ""
+      }
+    ],
+    "newAddition": true
+  },
+  {
+    "id": "track-bafdbb2cc4",
+    "title": "KI Musik",
+    "description": "",
+    "category": "Stilmix",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/final-4c6be53240aa.mp3",
+        "duration": 156,
+        "cover": "/covers/final-4c6be53240aa.jpg",
+        "description": "",
+        "video": "/videos/final-4c6be53240aa.mp4"
+      }
+    ],
+    "newAddition": true
+  },
+  {
+    "id": "track-b1fa453642",
+    "title": "Tango ungeschickt",
+    "description": "",
+    "category": "Stilmix",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/final-9e4cddd49cfd.mp3",
+        "duration": 153,
+        "cover": "/covers/final-9e4cddd49cfd.jpeg",
+        "description": ""
+      }
+    ],
+    "newAddition": true
+  },
+  {
+    "id": "track-c872cd6d08",
+    "title": "Guten Morgen",
+    "description": "",
+    "category": "Swing & Jazz",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/final-b6108fff96aa.mp3",
+        "duration": 136,
+        "cover": "/covers/final-b6108fff96aa.jpg",
+        "description": ""
+      }
+    ],
+    "newAddition": true
+  },
+  {
+    "id": "track-d9f03c11dc",
+    "title": "Wenn der Regen alles leiser macht",
+    "description": "",
+    "category": "Frühe Songs",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Textkorrektur",
+        "audio": "/music/final-b413fc6ddc39.mp3",
+        "duration": 182,
+        "cover": "/covers/final-b413fc6ddc39.jpg",
+        "description": "",
+        "video": "/videos/final-b413fc6ddc39.mp4"
+      },
+      {
+        "label": "Ursprüngliche Fassung",
+        "audio": "/music/final-4d2642abf139.mp3",
+        "duration": 190,
+        "description": "",
+        "cover": "/covers/final-b413fc6ddc39.jpg"
+      }
+    ],
+    "newAddition": true
+  },
+  {
+    "id": "track-aa600e8650",
+    "title": "Der erste Stein",
+    "description": "",
+    "category": "Frühe Songs",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/final-544460160bb0.mp3",
+        "duration": 295,
+        "cover": "/covers/final-544460160bb0.jpg",
+        "description": "",
+        "video": "/videos/final-544460160bb0.mp4"
+      },
+      {
+        "label": "Rockfassung",
+        "audio": "/music/final-9f161571f4d2.mp3",
+        "duration": 295,
+        "cover": "/covers/final-9f161571f4d2.jpg",
+        "description": "",
+        "video": "/videos/final-9f161571f4d2.mp4"
+      }
+    ],
+    "newAddition": true
+  },
+  {
+    "id": "track-bf783f6fd9",
+    "title": "Ein kleiner Stein",
+    "description": "",
+    "category": "Frühe Songs",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/final-c385f2f3150b.mp3",
+        "duration": 214,
+        "cover": "/covers/final-c385f2f3150b.jpg",
+        "description": "",
+        "video": "/videos/final-c385f2f3150b.mp4"
+      }
+    ],
+    "newAddition": true
+  },
+  {
+    "id": "track-d61af970ae",
+    "title": "The first Stone",
+    "description": "",
+    "category": "Frühe Songs",
+    "language": "en",
+    "versions": [
+      {
+        "label": "Weibliche Stimme",
+        "audio": "/music/final-41f5863b94da.mp3",
+        "duration": 388,
+        "description": ""
+      },
+      {
+        "label": "Männliche Stimme",
+        "audio": "/music/final-1f08d308d333.mp3",
+        "duration": 329,
+        "description": ""
+      }
+    ],
+    "newAddition": true
+  },
+  {
+    "id": "track-fc9481acc8",
+    "title": "Genau so fühl ich mich",
+    "description": "",
+    "category": "Frühe Songs",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/final-62c2f5d9dd0b.mp3",
+        "duration": 174,
+        "cover": "/covers/final-62c2f5d9dd0b.jpg",
+        "description": "",
+        "video": "/videos/final-62c2f5d9dd0b.mp4"
+      }
+    ],
+    "newAddition": true
+  },
+  {
+    "id": "track-f3cc2fd610",
+    "title": "Irgendwann zwischen uns",
+    "description": "",
+    "category": "Frühe Songs",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/final-2ebce5280a1f.mp3",
+        "duration": 202,
+        "cover": "/covers/final-2ebce5280a1f.jpg",
+        "description": "",
+        "video": "/videos/final-2ebce5280a1f.mp4"
+      }
+    ],
+    "newAddition": true
+  },
+  {
+    "id": "track-01763f2f21",
+    "title": "Vielleicht bist du wie ich",
+    "description": "",
+    "category": "Frühe Songs",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/final-18fd18fa3800.mp3",
+        "duration": 180,
+        "cover": "/covers/final-18fd18fa3800.jpg",
+        "description": "",
+        "video": "/videos/final-18fd18fa3800.mp4"
+      }
+    ],
+    "newAddition": true
+  },
+  {
+    "id": "track-2c9b24da5d",
+    "title": "Beautiful Nature",
+    "description": "",
+    "category": "Dark Wave",
+    "language": "en",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/final-32e386014d7f.mp3",
+        "duration": 289,
+        "cover": "/covers/final-32e386014d7f.jpg",
+        "description": ""
+      }
+    ],
+    "newAddition": true
+  },
+  {
+    "id": "track-9ea9bf1718",
+    "title": "First Stone",
+    "description": "",
+    "category": "Dark Wave",
+    "language": "en",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/final-31572a005bb9.mp3",
+        "duration": 211,
+        "description": ""
+      }
+    ],
+    "newAddition": true
+  },
+  {
+    "id": "track-b8a69647f2",
+    "title": "I am More",
+    "description": "",
+    "category": "Dark Wave",
+    "language": "en",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/final-4207f1581501.mp3",
+        "duration": 224,
+        "cover": "/covers/final-4207f1581501.jpg",
+        "description": ""
+      }
+    ],
+    "newAddition": true
+  },
+  {
+    "id": "track-81e9278022",
+    "title": "Red Scarf in the Rain",
+    "description": "",
+    "category": "Dark Wave",
+    "language": "en",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/final-65e12fdab392.mp3",
+        "duration": 219,
+        "cover": "/covers/final-65e12fdab392.jpg",
+        "description": ""
+      }
+    ],
+    "newAddition": true
+  },
+  {
+    "id": "track-842b998b59",
+    "title": "Wild River",
+    "description": "",
+    "category": "Dark Wave",
+    "language": "en",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/final-0b45819aa3a1.mp3",
+        "duration": 232,
+        "description": ""
+      }
+    ],
+    "newAddition": true
+  },
+  {
+    "id": "track-50d61df632",
+    "title": "Hot Summer Beat",
+    "description": "",
+    "category": "Experimente",
+    "language": "en",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/final-9f1ae28ba45c.mp3",
+        "duration": 264,
+        "cover": "/covers/final-9f1ae28ba45c.jpg",
+        "description": ""
+      }
+    ],
+    "newAddition": true
+  },
+  {
+    "id": "track-002596d6a6",
+    "title": "The Lamp Stays On",
+    "description": "",
+    "category": "Pop, Alternative & Balladen",
+    "language": "en",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/final-5f89a1871945.mp3",
+        "duration": 218,
+        "cover": "/covers/final-5f89a1871945.jpeg",
+        "description": ""
+      }
+    ],
+    "newAddition": true
+  },
+  {
+    "id": "track-1c26e9b640",
+    "title": "The strong ones",
+    "description": "",
+    "category": "Pop, Alternative & Balladen",
+    "language": "en",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/final-3db72892029c.mp3",
+        "duration": 308,
+        "description": ""
+      }
+    ],
+    "newAddition": true
+  },
+  {
+    "id": "track-3770641869",
+    "title": "You’re not wrong",
+    "description": "",
+    "category": "Pop, Alternative & Balladen",
+    "language": "en",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/final-9c58548f05dc.mp3",
+        "duration": 295,
+        "cover": "/covers/final-9c58548f05dc.jpg",
+        "description": ""
+      }
+    ],
+    "newAddition": true
+  },
+  {
+    "id": "track-8700c730ae",
+    "title": "The hidden glow",
+    "description": "",
+    "category": "Soul & R&B",
+    "language": "en",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/final-43e9f3911eef.mp3",
+        "duration": 234,
+        "cover": "/covers/final-43e9f3911eef.jpg",
+        "description": "",
+        "video": "/videos/final-43e9f3911eef.mp4"
+      }
+    ],
+    "newAddition": true
   }
 ]

@@ -25,6 +25,14 @@
 .track-card h2 { font-size: 18px; line-height: 1.25; margin: 0 0 5px; overflow-wrap: anywhere; }
 .track-language { font-size: 11px; color: #90a49c; }
 .track-description { font-size: 13px; color: #b3c3bb; line-height: 1.65; margin: 18px 0; }
+.cover-placeholder { display: flex; flex-direction: column; align-items: center; justify-content: center; background: radial-gradient(circle at 15% 10%, #649b81, transparent 70%), linear-gradient(135deg, #223c36, #1a2529); color: #e6e6c7; border: 1px solid #b8dbb640; }
+.cover-placeholder span { font-size: 28px; line-height: 1; }
+.cover-placeholder small { font-size: 10px; letter-spacing: 1px; margin-top: 6px; }
+.new-track-badge { color: #e2c398; font-size: 10px; margin: 12px 0; line-height: 1.5; }
+.single-version-label { font-size: 12px; color: #b3c3bb; margin: 0 0 14px; }
+.track-heading { margin-bottom: 12px; }
+.search-row { grid-template-columns: minmax(200px, 1.8fr) minmax(180px, 1.3fr) minmax(150px, 1fr) minmax(140px, 1fr); }
+@media (max-width: 1000px) { .search-row { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 .version-choice { display: flex; gap: 12px; align-items: center; font-size: 12px; color: #b3c3bb; margin: 0 0 16px; }
 .version-choice select { padding: 8px 10px; font-size: 12px; }
 .track-playback { margin-top: auto; }

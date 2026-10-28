@@ -1,28 +1,29 @@
 # Deine überarbeitete Webseite
 
-Die Änderungen sind lokal vorbereitet. Auf sumsum165.de wurden sie noch nicht veröffentlicht.
+Die Webseite enthält jetzt 83 Songs mit 96 Fassungen in 13 Rubriken. Davon wurden im zweiten Umbau 50 Titel neu ergänzt. Vier bereits vorhandene Songs haben zusätzliche Fassungen erhalten.
 
 ## Vorschau öffnen
 
-Doppelklicke im Webseitenordner auf **VORSCHAU-STARTEN.cmd**. Die Vorschau öffnet sich im Browser. Lass das dabei geöffnete Fenster während des Anschauens offen. Mit dem Schließen des Fensters beendest du die Vorschau.
+Doppelklicke im Webseitenordner auf VORSCHAU-STARTEN.cmd. Die Vorschau öffnet sich im Browser. Lass das geöffnete Fenster während des Anschauens offen. Mit dem Schließen des Fensters beendest du die Vorschau.
 
-## Was geändert wurde
+## Musik finden
 
-- Dein vollständiges Porträt steht auf der Startseite. Auf kleinen Bildschirmen erscheint es zwischen Überschrift und Vorstellungstext.
-- Die Musikseite zeigt 33 Songs mit 36 Fassungen. Suche, Rubriken und Sprachauswahl helfen beim Finden.
-- Verschiedene Fassungen von „Meine Schritte“, „Sanfte Power“ und „Ein ganz normaler Morgen“ lassen sich am jeweiligen Song auswählen.
-- Der doppelte Eintrag für „Sommer Beat“ wurde zusammengefasst.
-- Acht bereits vorhandene MP3s werden verwendet; 28 zusätzliche MP3s wurden aus den vorhandenen Videos erstellt. Die beiden übrigen alten MP3-Dateien bleiben im Ordner, waren aber im aktuellen lokalen Songverzeichnis nicht eingetragen.
-- Die Vorschaubilder stammen aus deinen Videos. Eigene Cover können später an ihre Stelle treten.
-- Videos lassen sich weiterhin bei jedem Song öffnen. Musik startet nur nach einem Klick; beim Start eines anderen Songs pausiert der vorherige.
-- Die Rubriken und Sprachzuordnungen sind ein erster Vorschlag anhand der vorhandenen Texte, keine musikalische Analyse. Wir können sie jederzeit gemeinsam ändern.
+- Neue Ergänzungen stehen zuerst. Über „Reihenfolge“ kannst du alphabetisch sortieren.
+- „Neu hinzugefügt“ zeigt neue Titel und bestehende Songs mit zusätzlichen Fassungen.
+- Rubrik, Sprache und Suche lassen sich miteinander kombinieren.
+- „Fassung“ wechselt zwischen Aufnahmen eines Songs.
+- Videos erscheinen nur bei Songs mit einer Videodatei. Kurze Ausschnitte sind entsprechend gekennzeichnet.
+- Nicht zugeordnete Sprachen stehen unter „Ohne Sprachzuordnung“.
 
-## Dateien und Sicherung
+Details und die Liste der neuen Titel findest du in MUSIK-ERWEITERUNG.md.
 
-Dein Projekt bleibt unter `C:\Users\sumsum\sumsum-webseite`.
+## Dateien und Sicherungen
 
-Die vorherigen Quelldateien liegen unter `C:\Users\sumsum\Documents\ChatGPT\Mastern und mehr\Webseite-Sicherung-2026-10-28`.
+Dein Projekt bleibt unter C:\Users\sumsum\sumsum-webseite.
 
-Die neue Songliste liegt in `src/songs.json`; Bilder und Audiodateien liegen in `public/covers`, `public/images` und `public/music`. Du musst diese Dateien nicht selbst bearbeiten – Änderungen und neue Songs können wir hier gemeinsam einpflegen.
+Die Sicherung vor dem ersten Umbau liegt unter C:\Users\sumsum\Documents\ChatGPT\Mastern und mehr\Webseite-Sicherung-2026-10-28.
+Die Sicherung vor der Musikerweiterung liegt unter C:\Users\sumsum\Documents\ChatGPT\Mastern und mehr\Webseite-Sicherung-Teil2-2026-10-28.
 
-Der Ordner `dist` enthält die vorbereitete Fassung für das spätere Hochladen. Wohin und wie sie hochgeladen wird, hängt von deinem bisherigen Hosting ab.
+Die Songliste liegt in src/songs.json. Du musst sie nicht selbst bearbeiten – neue Titel, Beschreibungen und Cover können wir hier gemeinsam ergänzen.
+
+Der Ordner dist enthält die vorbereitete Fassung für das spätere Hochladen. Die Änderungen sind noch nicht auf sumsum165.de veröffentlicht.

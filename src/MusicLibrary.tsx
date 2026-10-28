@@ -2,11 +2,13 @@ import { useEffect, useRef, useState } from "react";
 import catalogue from "./songs.json";
 import "./MusicLibrary.css";
 
-type Version = { label: string; audio: string; video: string; cover: string };
-type Song = { id: string; title: string; description: string; category: string; language: string; versions: Version[] };
+type Version = { label: string; audio: string; video?: string; cover?: string; duration?: number; videoLabel?: string; description?: string };
+type Song = { id: string; title: string; description: string; category: string; language: string; versions: Version[]; newAddition?: boolean };
 type VideoSelection = { title: string; version: Version };
 const songs: Song[] = catalogue;
-const categories = ["Alle", "Ruhe & Gefühl", "Kraft & Selbstvertrauen", "Sprechgesang", "Rhythmus & Energie"];
+const categories = [...new Set(songs.map(song => song.category))].sort((a, b) => a.localeCompare(b, "de"));
+const languageNames: Record<string, string> = { de: "Deutsch", en: "Englisch", it: "Italienisch", unknown: "Ohne Sprachzuordnung" };
+const languages = [...new Set(songs.map(song => song.language))];
 const pageSize = 9;
 
 function pauseOthers(current?: HTMLMediaElement) {
@@ -19,17 +21,21 @@ function SongCard({ song, onVideo }: { song: Song; onVideo: (selection: VideoSel
   const [versionIndex, setVersionIndex] = useState(0);
   const [audioError, setAudioError] = useState(false);
   const version = song.versions[versionIndex];
+  const description = version.description ?? song.description;
   return (
     <article className="track-card" aria-labelledby={`title-${song.id}`}>
       <div className="track-heading">
-        <img className="track-cover" src={version.cover} alt="" width="80" height="80" loading="lazy" />
+        {version.cover ? <img className="track-cover" src={version.cover} alt="" width="80" height="80" loading="lazy" /> :
+          <div className="track-cover cover-placeholder" aria-hidden="true"><span>♫</span><small>SaSum</small></div>}
         <div>
           <span className="track-category">{song.category}</span>
           <h2 id={`title-${song.id}`}>{song.title}</h2>
-          <span className="track-language">{song.language === "en" ? "Englisch" : "Deutsch"}</span>
+          <span className="track-language">{[song.language === "unknown" ? "" : languageNames[song.language], version.duration ? `${Math.floor(version.duration / 60)}:${String(version.duration % 60).padStart(2, "0")}` : ""].filter(Boolean).join(" · ")}</span>
         </div>
       </div>
-      <p className="track-description">{song.description}</p>
+      {description && <p className="track-description">{description}</p>}
+      {song.newAddition && <p className="new-track-badge">Neu in der Sammlung{song.versions.length > 1 ? " · mit weiteren Fassungen" : ""}</p>}
+      {song.versions.length === 1 && version.label !== "Original" && <p className="single-version-label">{version.label}</p>}
       {song.versions.length > 1 && (
         <label className="version-choice">
           Fassung
@@ -45,11 +51,11 @@ function SongCard({ song, onVideo }: { song: Song; onVideo: (selection: VideoSel
         <audio key={version.audio} controls preload="none" src={version.audio}
           aria-label={`${song.title} – ${version.label} anhören`}
           onPlay={event => pauseOthers(event.currentTarget)} onError={() => setAudioError(true)} />
-        {audioError && <p className="media-error" role="alert">Der Song konnte nicht geladen werden. Versuche es mit dem Video.</p>}
-        <button type="button" className="video-link" aria-label={`Video ansehen: ${song.title} – ${version.label}`} onClick={() => {
+        {audioError && <p className="media-error" role="alert">Der Song konnte nicht geladen werden. {version.video ? "Versuche es mit dem Video." : "Bitte lade die Seite erneut."}</p>}
+        {version.video && <button type="button" className="video-link" aria-label={`${version.videoLabel || "Video ansehen"}: ${song.title} – ${version.label}`} onClick={() => {
           pauseOthers();
           onVideo({ title: song.title, version });
-        }}><span aria-hidden="true">▷</span> Video ansehen</button>
+        }}><span aria-hidden="true">▷</span> {version.videoLabel || "Video ansehen"}</button>}
       </div>
     </article>
   );
@@ -84,15 +90,19 @@ export default function MusicLibrary() {
   const [category, setCategory] = useState("Alle");
   const [language, setLanguage] = useState("all");
   const [query, setQuery] = useState("");
+  const [onlyNew, setOnlyNew] = useState(false);
+  const [sort, setSort] = useState("new");
   const [limit, setLimit] = useState(pageSize);
   const [video, setVideo] = useState<VideoSelection | null>(null);
   const search = query.trim().toLocaleLowerCase("de");
   const filtered = songs.filter(song =>
     (category === "Alle" || song.category === category) &&
     (language === "all" || song.language === language) &&
-    `${song.title} ${song.description}`.toLocaleLowerCase("de").includes(search)
-  );
-  const reset = () => { setCategory("Alle"); setLanguage("all"); setQuery(""); setLimit(pageSize); };
+    (!onlyNew || song.newAddition) &&
+    `${song.title} ${song.description} ${song.category} ${song.versions.map(version => version.label).join(" ")}`.toLocaleLowerCase("de").includes(search)
+  ).sort((a, b) => sort === "title" ? a.title.localeCompare(b.title, "de") :
+    Number(Boolean(b.newAddition)) - Number(Boolean(a.newAddition)) || Number(b.id.startsWith("track-")) - Number(a.id.startsWith("track-")));
+  const reset = () => { setCategory("Alle"); setLanguage("all"); setQuery(""); setOnlyNew(false); setLimit(pageSize); };
   return (
     <>
       <div className="library-heading">
@@ -101,18 +111,23 @@ export default function MusicLibrary() {
         <span className="library-total">{songs.length} Songs zum Entdecken</span>
       </div>
       <div className="music-toolbar">
-        <div className="category-filters" role="group" aria-label="Songs nach Rubrik filtern">
-          {categories.map(item => <button key={item} type="button" aria-pressed={category === item} onClick={() => { setCategory(item); setLimit(pageSize); }}>{item}</button>)}
+        <div className="category-filters" role="group" aria-label="Sammlung auswählen">
+          <button type="button" aria-pressed={!onlyNew} onClick={() => { setOnlyNew(false); setLimit(pageSize); }}>Alle Songs</button>
+          <button type="button" aria-pressed={onlyNew} onClick={() => { setOnlyNew(true); setLimit(pageSize); }}>Neu hinzugefügt</button>
         </div>
         <div className="search-row">
           <label className="song-search"><span>Song suchen</span><input type="search" value={query} placeholder="Titel oder Stichwort eingeben …" onChange={event => { setQuery(event.target.value); setLimit(pageSize); }} /></label>
-          <label className="language-filter"><span>Sprache</span><select value={language} onChange={event => { setLanguage(event.target.value); setLimit(pageSize); }}>
-            <option value="all">Alle Sprachen</option><option value="de">Deutsch</option><option value="en">Englisch</option>
+          <label><span>Rubrik</span><select value={category} onChange={event => { setCategory(event.target.value); setLimit(pageSize); }}>
+            <option value="Alle">Alle Rubriken</option>{categories.map(item => <option key={item} value={item}>{item}</option>)}
           </select></label>
+          <label className="language-filter"><span>Sprache</span><select value={language} onChange={event => { setLanguage(event.target.value); setLimit(pageSize); }}>
+            <option value="all">Alle Sprachen</option>{languages.map(item => <option key={item} value={item}>{languageNames[item] || item}</option>)}
+          </select></label>
+          <label><span>Reihenfolge</span><select value={sort} onChange={event => { setSort(event.target.value); setLimit(pageSize); }}><option value="new">Neue zuerst</option><option value="title">Titel A–Z</option></select></label>
         </div>
       </div>
       <div className="results-row"><p role="status">{filtered.length === 1 ? "1 Song" : `${filtered.length} Songs`}{filtered.length > limit ? ` · ${limit} werden angezeigt` : ""}</p>
-        {(category !== "Alle" || language !== "all" || query) && <button type="button" className="reset-filters" onClick={reset}>Auswahl zurücksetzen</button>}
+        {(category !== "Alle" || language !== "all" || query || onlyNew) && <button type="button" className="reset-filters" onClick={reset}>Auswahl zurücksetzen</button>}
       </div>
       {filtered.length ? <div className="track-grid">{filtered.slice(0, limit).map(song => <SongCard key={song.id} song={song} onVideo={setVideo} />)}</div> :
         <div className="empty-results"><h2>Hier ist es gerade ganz still.</h2><p>Zu dieser Auswahl gibt es keinen Song. Probiere einen anderen Suchbegriff oder eine andere Rubrik.</p><button type="button" className="btn secondary" onClick={reset}>Alle Songs anzeigen</button></div>}
