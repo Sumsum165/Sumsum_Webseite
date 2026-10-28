@@ -27,3 +27,14 @@ Die Sicherung vor der Musikerweiterung liegt unter C:\Users\sumsum\Documents\Cha
 Die Songliste liegt in src/songs.json. Du musst sie nicht selbst bearbeiten – neue Titel, Beschreibungen und Cover können wir hier gemeinsam ergänzen.
 
 Der Ordner dist enthält die vorbereitete Fassung für das spätere Hochladen. Die Änderungen sind noch nicht auf sumsum165.de veröffentlicht.
+
+
+## Herkunft und Downloads (28.10.2026)
+
+- Alle 95 MP3s und 60 MP4s im Katalog enthalten jetzt „SaSum“, den Titel mit Fassung, die Quelle https://sumsum165.de/ und einen Nutzungshinweis.
+- Vorhandene eingebettete Cover, Kommentare und technische Medieninhalte bleiben erhalten. Abweichende frühere Titel/Künstlerangaben sind zusätzlich als ursprüngliche Angaben gespeichert.
+- Die beschrifteten Downloadlinks vergeben Dateinamen mit Künstler, Titel, Fassung und sumsum165.de. Die internen Medienadressen bleiben für bisherige Songs gleich.
+- Die eingebauten Downloadmenüs werden in unterstützenden Browsern ausgeblendet, damit die beschrifteten Links neben dem Nutzungshinweis verwendet werden können. Das ist kein Kopierschutz. Auch Metadaten lassen sich nachträglich entfernen.
+- „Nur du“ enthält jetzt das vollständige MP4-Video statt des bisherigen MP3-Masters. Es öffnet sich über „Video ansehen“ und lässt sich als MP4 herunterladen.
+- Die unveränderte Originaldatei auf dem Desktop bleibt erhalten. Die bisherige Webseitenfassung einschließlich betroffener Medien liegt in der Sicherung „Webseite-Sicherung-Herkunft-2026-10-28“ im Arbeitsordner „Mastern und mehr“.
+- Neue Dateien müssen vor dem Hinzufügen ebenfalls mit Herkunftsangaben versehen werden; das geschieht nicht automatisch durch die Webseite.
