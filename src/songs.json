@@ -1,5 +1,53 @@
 [
   {
+    "id": "track-was-ist-mit-euch-los",
+    "title": "Was ist mit euch los",
+    "description": "",
+    "category": "Sozialkritische Themen",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/SaSum-was-ist-mit-euch-los.mp3",
+        "duration": 260,
+        "cover": "/covers/SaSum-was-ist-mit-euch-los.jpg"
+      }
+    ],
+    "newAddition": true
+  },
+  {
+    "id": "track-ueber-das-aelterwerden",
+    "title": "Über das Älterwerden",
+    "description": "",
+    "category": "Experimente",
+    "language": "de",
+    "versions": [
+      {
+        "label": "Original",
+        "audio": "/music/SaSum-ueber-das-aelterwerden.mp3",
+        "duration": 192,
+        "cover": "/covers/SaSum-ueber-das-aelterwerden.jpg"
+      }
+    ],
+    "newAddition": true,
+    "credits": "Text: Wilhelm Busch"
+  },
+  {
+    "id": "track-greg",
+    "title": "Greg",
+    "description": "",
+    "category": "Experimente",
+    "language": "unknown",
+    "versions": [
+      {
+        "label": "Original",
+        "video": "/videos/SaSum-greg.mp4",
+        "duration": 128
+      }
+    ],
+    "newAddition": true
+  },
+  {
     "id": "song-01",
     "title": "Leise hier",
     "description": "Ein ruhiger, gefühlvoller Song mit stiller Atmosphäre.",
