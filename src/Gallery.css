@@ -1,0 +1,28 @@
+.gallery-categories { display: flex; flex-wrap: wrap; gap: 12px; margin: 28px 0 36px; }
+.gallery-categories button { border: 1px solid #53665d; background: #14211c; color: #d4dfd8; border-radius: 14px; padding: 13px 20px; cursor: pointer; }
+.gallery-categories button.selected { background: #a3ead6; border-color: #a3ead6; color: #10241d; }
+.gallery-categories span { margin-left: 12px; font-size: 13px; opacity: .8; }
+.creative-gallery h2 { font-size: 28px; margin-bottom: 12px; }
+.art-origin { border-left: 3px solid #a3cfbd; border-radius: 0 16px 16px 0; background: #a3cfbd0d; max-width: 800px; padding: 16px 22px; color: #c5d3cb; line-height: 1.8; }
+.art-origin p { margin: 0; }
+.gallery-card { padding: 0; text-align: left; color: #dce7e0; cursor: zoom-in; font: inherit; }
+.gallery-caption { display: block; padding: 16px 18px; line-height: 1.5; }
+.creative-gallery button:focus-visible { outline: 3px solid #a3ead6; outline-offset: 4px; }
+.gallery-viewer { position: fixed; inset: 0; margin: auto; width: 100vw; height: 100dvh; max-width: none; max-height: none; border: 0; padding: 64px 72px 24px; background: #070c0bf5; color: white; }
+.gallery-viewer::backdrop { background: #000d; }
+.gallery-viewer[open] { display: flex; align-items: center; justify-content: center; }
+.gallery-viewer figure { margin: 0; max-width: 100%; text-align: center; }
+.gallery-viewer img { display: block; max-width: 100%; max-height: calc(100dvh - 160px); margin: auto; object-fit: contain; border-radius: 8px; }
+.gallery-viewer figcaption { margin-top: 16px; line-height: 1.5; }
+.gallery-viewer figcaption span { display: block; color: #a3cfbd; font-size: 13px; }
+.gallery-viewer button { position: absolute; border: 1px solid #65776e; background: #15261f; color: white; border-radius: 12px; min-width: 44px; min-height: 44px; cursor: pointer; }
+.viewer-close { top: 16px; right: 16px; font-size: 20px; }
+.viewer-prev, .viewer-next { top: 48%; font-size: 36px; }
+.viewer-prev { left: 12px; } .viewer-next { right: 12px; }
+@media (max-width: 600px) {
+  .creative-gallery .photo-grid { grid-template-columns: minmax(0, 1fr); gap: 18px; }
+  .gallery-viewer { padding: 64px 10px 80px; }
+  .gallery-viewer img { max-height: calc(100dvh - 230px); }
+  .viewer-prev, .viewer-next { top: auto; bottom: 16px; }
+  .viewer-prev { left: calc(50% - 60px); } .viewer-next { right: calc(50% - 60px); }
+}

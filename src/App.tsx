@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import Gallery from "./Gallery";
 import bee from "./assets/bee.png";
 import CursorGlow from "./CursorGlow";
 import MusicLibrary from "./MusicLibrary";
@@ -27,101 +28,6 @@ const TikTokIcon = () => (
     <path d="M19.589 6.686a4.793 4.793 0 01-3.77-1.87v8.17a6.003 6.003 0 11-5.19-5.94v2.53a3.47 3.47 0 102.36 3.31V2h2.62a4.79 4.79 0 004.04 2.21v2.476z"/>
   </svg>
 );
-const photos = [
-  {
-    title: "Fotografie 1",
-    src: "/fotografie/foto1.jpg",
-  },
-  {
-    title: "Fotografie 2",
-    src: "/fotografie/foto2.jpg",
-  },
-  {
-    title: "Fotografie 3",
-    src: "/fotografie/foto3.jpg",
-  },
-  {
-    title: "Fotografie 4",
-    src: "/fotografie/foto4.jpg",
-  },
-  {
-    title: "Fotografie 5",
-    src: "/fotografie/foto5.jpg",
-  },
-  {
-    title: "Fotografie 6",
-    src: "/fotografie/foto6.jpg",
-  },
-  {
-    title: "Fotografie 7",
-    src: "/fotografie/foto7.jpg",
-  },
-  {
-    title: "Fotografie 8",
-    src: "/fotografie/foto8.jpg",
-  },
-  {
-    title: "Fotografie 9",
-    src: "/fotografie/foto9.jpg",
-  },
-  {
-    title: "Fotografie 10",
-    src: "/fotografie/foto10.jpg",
-  },
-  {
-    title: "Fotografie 11",
-    src: "/fotografie/foto11.jpg",
-  },
-  {
-    title: "Fotografie 12",
-    src: "/fotografie/foto12.jpg",
-  },
-  {
-    title: "Fotografie 13",
-    src: "/fotografie/foto13.jpg",
-  },
-  {
-    title: "Fotografie 14",
-    src: "/fotografie/foto14.jpg",
-  },
-  {
-    title: "Fotografie 15",
-    src: "/fotografie/foto15.jpg",
-  },
-  {
-    title: "Fotografie 16",
-    src: "/fotografie/foto16.jpg",
-  },
-  {
-   title: "Fotografie 17",
-    src: "/fotografie/foto17.jpg",
-  },
-  {
-   title: "Fotografie 18",
-    src: "/fotografie/foto18.jpg",
-  },
-  {
-   title: "Fotografie 19",
-    src: "/fotografie/foto19.jpg",
-  },
-  {
-   title: "Fotografie 20",
-    src: "/fotografie/foto20.jpg",
-  },
-   {
-   title: "Fotografie 21",
-    src: "/fotografie/foto21.jpg",
-  },
-   {
-   title: "Fotografie 22",
-    src: "/fotografie/foto22.jpg",
-  },
-   {
-   title: "Fotografie 23",
-    src: "/fotografie/foto23.jpg",
-  },
-  
-];
 function Header({
   setPage,
   page,
@@ -183,7 +89,7 @@ function pauseOtherVideos(currentVideo: HTMLMediaElement) {
 }
 export default function App() {
   const [page, setPage] = useState<Page>("home");
-  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
+
 
   if (page === "music") {
     return (
@@ -208,76 +114,7 @@ export default function App() {
       <Header setPage={setPage} page={page} />
       <div className="overlay" />
 
-      <section
-  className="content-page fade-in"
-  onContextMenu={(e) => e.preventDefault()}
->
-        <h1 className="page-title">📷 Fotografie</h1>
-
-        <p className="page-text">
-          Neben Musik und digitalen Projekten ist Fotografie für mich ein weiterer
-          kreativer Ausdruck. Hier entstehen Eindrücke, Stimmungen und kleine
-          Momente, die für sich sprechen.
-        </p>
-
-        <div className="photo-grid">
-          {selectedIndex !== null && (
-  <div
-    className="lightbox"
-    onClick={() => setSelectedIndex(null)}
-  >
-    <img
-      src={photos[selectedIndex].src}
-      className="lightbox-image"
-      onClick={(e) => e.stopPropagation()}
-    />
-
-    <button
-      className="nav left"
-      onClick={(e) => {
-        e.stopPropagation();
-        setSelectedIndex((prev) =>
-          prev === 0 ? photos.length - 1 : prev! - 1
-        );
-      }}
-    >
-      ‹
-    </button>
-
-    <button
-      className="nav right"
-      onClick={(e) => {
-        e.stopPropagation();
-        setSelectedIndex((prev) =>
-          prev === photos.length - 1 ? 0 : prev! + 1
-        );
-      }}
-    >
-      ›
-    </button>
-  </div>
-)}
-          {photos.map((photo, index) => (
-            <article key={photo.src} className="photo-card">
-              <img
-  src={photo.src}
-  alt={photo.title}
-  className="photo-image protected-image"
-  onClick={() => setSelectedIndex(index)}
-  onContextMenu={(e) => e.preventDefault()}
-  draggable={false}
-/>
-            </article>
-          ))}
-        </div>
-
-        <button
-          className="btn secondary back-btn"
-          onClick={() => setPage("home")}
-        >
-          ← Zurück
-        </button>
-      </section>
+      <section className="content-page fade-in"><Gallery /><button className="btn secondary back-btn" onClick={() => setPage("home")}>← Zurück</button></section>
     </main>
   );
 }
